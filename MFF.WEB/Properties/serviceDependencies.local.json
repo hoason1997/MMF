@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "DefaultContextConnection"
+    },
+    "mssql2": {
+      "type": "mssql.local",
+      "connectionId": "DefautConnectConnection"
+    },
+    "mssql3": {
+      "type": "mssql.local",
+      "connectionId": "DefaultConnectConnection"
+    },
+    "mssql4": {
+      "type": "mssql.local",
+      "connectionId": "MFFWEBContextConnection"
+    }
+  }
+}

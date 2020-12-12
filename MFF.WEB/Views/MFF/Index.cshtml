@@ -1,0 +1,20 @@
+﻿@using MFF.DTO.BaseEntities
+@model IEnumerable<MFFItem>
+@{
+    ViewData["Title"] = "My MFFs";
+}
+
+<h1 class="display-4">My MFFs</h1>
+<div class="mt-5"></div>
+<ul>
+    @foreach (var item in Model)
+    {
+    <li class="MFF-item">
+        <a asp-action="@nameof(MFF.WEB.Controllers.MFFController.Update)" asp-route-id="@item.Id">@item.Name</a>
+        |
+        <a asp-action="@nameof(MFF.WEB.Controllers.MFFController.Delete)" asp-route-id="@item.Id">Delete</a>
+    </li>
+    }
+</ul>
+<div class="mt-5"></div>
+<a asp-action="Create" class="btn btn-primary">New item</a>

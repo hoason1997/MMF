@@ -1,0 +1,15 @@
+﻿@using MFF.WEB.Models.MFF
+@model DeleteViewModel
+@{
+    ViewData["Title"] = $"Delete {Model.Name}";
+}
+
+<h1 class="display-4">Delete @Model.Name?</h1>
+<form asp-action="@nameof(MFF.WEB.Controllers.MFFController.Delete)">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+    </div>
+</form>
