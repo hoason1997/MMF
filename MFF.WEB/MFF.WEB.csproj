@@ -5,12 +5,36 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Default\Data\**" />
+    <Compile Remove="Areas\Default\Models\**" />
+    <Compile Remove="Areas\Default\Views\**" />
+    <Compile Remove="Areas\NHCH\Data\**" />
+    <Compile Remove="Areas\NHCH\Models\**" />
+    <Compile Remove="Areas\NHCH\Views\CauHoi\Scripts\**" />
     <Compile Remove="Constants\**" />
     <Compile Remove="Identity\**" />
+    <Content Remove="Areas\Default\Data\**" />
+    <Content Remove="Areas\Default\Models\**" />
+    <Content Remove="Areas\Default\Views\**" />
+    <Content Remove="Areas\NHCH\Data\**" />
+    <Content Remove="Areas\NHCH\Models\**" />
+    <Content Remove="Areas\NHCH\Views\CauHoi\Scripts\**" />
     <Content Remove="Constants\**" />
     <Content Remove="Identity\**" />
+    <EmbeddedResource Remove="Areas\Default\Data\**" />
+    <EmbeddedResource Remove="Areas\Default\Models\**" />
+    <EmbeddedResource Remove="Areas\Default\Views\**" />
+    <EmbeddedResource Remove="Areas\NHCH\Data\**" />
+    <EmbeddedResource Remove="Areas\NHCH\Models\**" />
+    <EmbeddedResource Remove="Areas\NHCH\Views\CauHoi\Scripts\**" />
     <EmbeddedResource Remove="Constants\**" />
     <EmbeddedResource Remove="Identity\**" />
+    <None Remove="Areas\Default\Data\**" />
+    <None Remove="Areas\Default\Models\**" />
+    <None Remove="Areas\Default\Views\**" />
+    <None Remove="Areas\NHCH\Data\**" />
+    <None Remove="Areas\NHCH\Models\**" />
+    <None Remove="Areas\NHCH\Views\CauHoi\Scripts\**" />
     <None Remove="Constants\**" />
     <None Remove="Identity\**" />
   </ItemGroup>
@@ -44,12 +68,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Default\Data\" />
-    <Folder Include="Areas\Default\Models\" />
-    <Folder Include="Areas\Default\Views\" />
-    <Folder Include="Areas\NHCH\Data\" />
-    <Folder Include="Areas\NHCH\Models\" />
-    <Folder Include="Areas\NHCH\Views\CauHoi\Scripts\" />
+    <Folder Include="Areas\Template1\Data\" />
+    <Folder Include="Areas\Template1\Models\" />
+    <Folder Include="assets\" />
   </ItemGroup>
 
 </Project>

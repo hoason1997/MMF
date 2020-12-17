@@ -115,14 +115,13 @@ namespace MFF.WEB
                // endpoints.MapControllerRoute("default", "{controller=CauHoi}/{action=Index}/");
                 // endpoints.MapRazorPages();
 
-                endpoints.MapAreaControllerRoute(
-                 name: "NHCH",
-                 areaName: "NHCH",
-                 pattern: "NHCH/{controller=CauHoi}/{action=Index}");
-
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=NHCH}/{controller=CauHoi}/{action=Index}");
+                    pattern: "{area=Template1}/{controller=Home}/{action=Index}");
+
+                endpoints.MapControllerRoute(
+                    name: "AVC",
+                    pattern: "{area=NHCH}/{controller=CauHoi}/{action=Create}");
 
                 endpoints.MapRazorPages();
             });
