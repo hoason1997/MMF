@@ -67,20 +67,22 @@ namespace MFF.WEB.Controllers
         {
             return View();
         }
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        public ActionResult Grid()
+        {
+            return View();
+        }
 
         // POST: CauHoiController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            return View();
         }
 
         // GET: CauHoiController/Edit/5
