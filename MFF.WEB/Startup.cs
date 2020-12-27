@@ -121,7 +121,7 @@ namespace MFF.WEB
 
                 endpoints.MapControllerRoute(
                     name: "AVC",
-                    pattern: "{area=NHCH}/{controller=CauHoi}/{action=Create}");
+                    pattern: "{area=NHCH}/{controller=Demo2}/{action=Index}");
 
                 endpoints.MapRazorPages();
             });

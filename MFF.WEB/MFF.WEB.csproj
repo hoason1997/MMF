@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>530ed7aa-69a2-4038-be39-632db9322388</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -10,7 +11,7 @@
     <Compile Remove="Areas\Default\Views\**" />
     <Compile Remove="Areas\NHCH\Data\**" />
     <Compile Remove="Areas\NHCH\Models\**" />
-    <Compile Remove="Areas\NHCH\Views\CauHoi\Scripts\**" />
+    <Compile Remove="Areas\NHCH\Views\Demo1\Scripts\**" />
     <Compile Remove="Constants\**" />
     <Compile Remove="Identity\**" />
     <Content Remove="Areas\Default\Data\**" />
@@ -18,7 +19,7 @@
     <Content Remove="Areas\Default\Views\**" />
     <Content Remove="Areas\NHCH\Data\**" />
     <Content Remove="Areas\NHCH\Models\**" />
-    <Content Remove="Areas\NHCH\Views\CauHoi\Scripts\**" />
+    <Content Remove="Areas\NHCH\Views\Demo1\Scripts\**" />
     <Content Remove="Constants\**" />
     <Content Remove="Identity\**" />
     <EmbeddedResource Remove="Areas\Default\Data\**" />
@@ -26,7 +27,7 @@
     <EmbeddedResource Remove="Areas\Default\Views\**" />
     <EmbeddedResource Remove="Areas\NHCH\Data\**" />
     <EmbeddedResource Remove="Areas\NHCH\Models\**" />
-    <EmbeddedResource Remove="Areas\NHCH\Views\CauHoi\Scripts\**" />
+    <EmbeddedResource Remove="Areas\NHCH\Views\Demo1\Scripts\**" />
     <EmbeddedResource Remove="Constants\**" />
     <EmbeddedResource Remove="Identity\**" />
     <None Remove="Areas\Default\Data\**" />
@@ -34,7 +35,7 @@
     <None Remove="Areas\Default\Views\**" />
     <None Remove="Areas\NHCH\Data\**" />
     <None Remove="Areas\NHCH\Models\**" />
-    <None Remove="Areas\NHCH\Views\CauHoi\Scripts\**" />
+    <None Remove="Areas\NHCH\Views\Demo1\Scripts\**" />
     <None Remove="Constants\**" />
     <None Remove="Identity\**" />
   </ItemGroup>
