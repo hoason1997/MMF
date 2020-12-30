@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace MFF.WEB
 {
@@ -75,17 +76,17 @@ namespace MFF.WEB
         protected virtual void ConfigureDatabaseServices(IServiceCollection services)
         {
             #region SQLite
-            //services.AddDbContext<MFFDbContext>(options =>
-            //    options.UseSqlite(
-            //        Configuration.GetConnectionString("DefaultConnection"),
-            //        builder => builder.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name)
-            //    ));
+            services.AddDbContext<SmartLabDB>(options =>
+                options.UseSqlite(
+                    Configuration.GetConnectionString("DefaultConnection"),
+                    builder => builder.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name)
+                ));
             #endregion
 
-             //   services.AddDbContext<BanCanMiaPhapLyDB>(options =>
-        //    options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnection")));
-            services.AddDbContext<SmartLabDB>(options =>
-    options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnect")));
+            //   services.AddDbContext<BanCanMiaPhapLyDB>(options =>
+            //    options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnection")));
+            //        services.AddDbContext<SmartLabDB>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnect")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
