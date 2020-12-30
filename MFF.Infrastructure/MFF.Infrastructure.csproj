@@ -20,7 +20,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\MFF\MFF.Data.csproj" />
+	  <ProjectReference Include="..\MFF.Data\MFF.Data.csproj" />
+	  <ProjectReference Include="..\MFF.DTO\MFF.DTO.csproj" />
 	</ItemGroup>
 
 </Project>

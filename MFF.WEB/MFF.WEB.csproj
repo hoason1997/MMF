@@ -58,7 +58,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MFF.Infrastructure\MFF.Infrastructure.csproj" />
-    <ProjectReference Include="..\MFF.Services\MFF.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

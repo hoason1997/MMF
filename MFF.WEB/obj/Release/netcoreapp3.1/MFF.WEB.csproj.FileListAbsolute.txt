@@ -215,6 +215,7 @@ D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Areas\SmartLab\Views\Demo3\Grid.c
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Areas\SmartLab\Views\Demo3\Index.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\Components\MenuComponent\Default.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -231,4 +232,3 @@ D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.csproj.CopyComplete
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.dll
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.pdb
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.genruntimeconfig.cache
-D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\Components\MenuComponent\Default.cshtml.g.cs

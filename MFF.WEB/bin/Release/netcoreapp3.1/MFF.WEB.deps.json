@@ -3211,6 +3211,24 @@
           "MFF.DTO.dll": {}
         }
       },
+      "MFF.Infrastructure/1.0.0": {
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.0",
+          "MFF.DTO": "1.0.0",
+          "MFF.Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.10",
+          "Refit": "5.2.4",
+          "Scrutor": "3.3.0",
+          "System.Drawing.Common": "5.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.8.0"
+        },
+        "runtime": {
+          "MFF.Infrastructure.dll": {}
+        },
+        "compile": {
+          "MFF.Infrastructure.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -4780,18 +4798,6 @@
       "WindowsBase/4.0.0.0": {
         "compile": {
           "WindowsBase.dll": {}
-        },
-        "compileOnly": true
-      },
-      "MFF.Infrastructure/1.0.0": {
-        "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.0",
-          "MFF.Data": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "3.1.10",
-          "Refit": "5.2.4",
-          "Scrutor": "3.3.0",
-          "System.Drawing.Common": "5.0.0",
-          "System.IdentityModel.Tokens.Jwt": "6.8.0"
         },
         "compileOnly": true
       }
@@ -6437,6 +6443,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "MFF.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -7744,11 +7755,6 @@
     },
     "WindowsBase/4.0.0.0": {
       "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "MFF.Infrastructure/1.0.0": {
-      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

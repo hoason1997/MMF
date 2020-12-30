@@ -7571,8 +7571,8 @@
     },
     "MFF.Data/1.0.0": {
       "type": "project",
-      "path": "../MFF/MFF.Data.csproj",
-      "msbuildProject": "../MFF/MFF.Data.csproj"
+      "path": "../MFF.Data/MFF.Data.csproj",
+      "msbuildProject": "../MFF.Data/MFF.Data.csproj"
     },
     "MFF.DTO/1.0.0": {
       "type": "project",
@@ -7583,6 +7583,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.0",
+      "MFF.DTO >= 1.0.0",
       "MFF.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Relational >= 3.1.10",
       "Refit >= 5.2.4",
@@ -7618,8 +7619,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\MMF\\MFF\\MFF.Data.csproj": {
-              "projectPath": "D:\\MMF\\MFF\\MFF.Data.csproj"
+            "D:\\MMF\\MFF.Data\\MFF.Data.csproj": {
+              "projectPath": "D:\\MMF\\MFF.Data\\MFF.Data.csproj"
+            },
+            "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
+              "projectPath": "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj"
             }
           }
         }
