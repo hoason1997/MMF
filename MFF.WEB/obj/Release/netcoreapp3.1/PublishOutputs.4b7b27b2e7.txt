@@ -3862,7 +3862,6 @@ D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\demo3\vendor\jquery-
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\demo3\vendor\jquery-file-upload\server\node\.gitignore
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\demo3\vendor\jquery-file-upload\server\node\package.json
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\demo3\vendor\jquery-file-upload\server\node\public\files\.gitignore
-D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\demo3\vendor\jquery-file-upload\server\node\public\files\thumbnail\.gitignore
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\demo3\vendor\jquery-file-upload\server\node\server.js
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\demo3\vendor\jquery-file-upload\server\node\tmp\.gitignore
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\demo3\vendor\jquery-file-upload\server\php\files\.gitignore

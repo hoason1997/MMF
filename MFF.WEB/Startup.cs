@@ -1,5 +1,5 @@
 using AutoMapper;
-using MFF.Data.NHCH;
+using MFF.Data.SmartLab;
 using MFF.DTO.Middlewares;
 using MFF.Infrastructure.Configurations;
 using MFF.Infrastructure.Mapping;
@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace MFF.WEB
 {
@@ -31,7 +30,7 @@ namespace MFF.WEB
 
         protected void ConfigureDefaultServices(IServiceCollection services)
         {
-       //    services.AddTransient<ICauHoiService, CauHoiService>();
+       //    services.AddTransient<IBanCanMiaService, BanCanMiaService>();
             services.AddAppConfig(Configuration);
             services.AddAutoMapper(typeof(IMappingProfile));
          //   services.AddAutoMapperConfig();
@@ -83,25 +82,26 @@ namespace MFF.WEB
             //    ));
             #endregion
 
-             //   services.AddDbContext<CauHoiPhapLyDB>(options =>
-        //    options.UseSqlServer(Configuration.GetConnectionString("NHCHConnection")));
-            services.AddDbContext<CauHoiDB>(options =>
-    options.UseSqlServer(Configuration.GetConnectionString("NHCHConnection")));
+             //   services.AddDbContext<BanCanMiaPhapLyDB>(options =>
+        //    options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnection")));
+            services.AddDbContext<SmartLabDB>(options =>
+    options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnect")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }  
+            //    if (env.IsDevelopment())
+            //    {
+            //        app.UseDeveloperExceptionPage();
+            //    }
+            //    else
+            //    {
+            //        app.UseExceptionHandler("/Home/Error");
+            //        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+            //        app.UseHsts();
+            //    }  
+            app.UseDeveloperExceptionPage();
             app.UseMiddleware(typeof(ExceptionHandlingMiddleware));
             app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -112,16 +112,16 @@ namespace MFF.WEB
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
-               // endpoints.MapControllerRoute("default", "{controller=CauHoi}/{action=Index}/");
+               // endpoints.MapControllerRoute("default", "{controller=BanCanMia}/{action=Index}/");
                 // endpoints.MapRazorPages();
 
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=Template1}/{controller=Home}/{action=Index}");
+                    pattern: "{area=SmartLab}/{controller=Demo2}/{action=Grid}");
 
-                endpoints.MapControllerRoute(
-                    name: "AVC",
-                    pattern: "{area=NHCH}/{controller=Demo2}/{action=Index}");
+                //endpoints.MapControllerRoute(
+                //    name: "AVC",
+                //    pattern: "{area=SmartLab}/{controller=Demo2}/{action=Index}");
 
                 endpoints.MapRazorPages();
             });

@@ -3700,6 +3700,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "JsonWebTokens": "4.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.10",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "3.1.10",
           "Newtonsoft.Json": "12.0.3",
@@ -11264,7 +11265,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -11272,11 +11273,11 @@
       "projectUniqueName": "D:\\MMF\\MFF.WEB\\MFF.WEB.csproj",
       "projectName": "MFF.WEB",
       "projectPath": "D:\\MMF\\MFF.WEB\\MFF.WEB.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\MMF\\MFF.WEB\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11290,6 +11291,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "D:\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj": {
+              "projectPath": "D:\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj"
+            },
             "D:\\MMF\\MFF.Services\\MFF.Infrastructure.csproj": {
               "projectPath": "D:\\MMF\\MFF.Services\\MFF.Infrastructure.csproj"
             }
@@ -11399,7 +11403,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

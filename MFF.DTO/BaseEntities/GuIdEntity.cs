@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MFF.DTO.BaseEntities
 {
-    public class GuIdEntity : Entity
+    public class GuIdEntity : BaseEntity
     {
         public GuIdEntity()
         {
