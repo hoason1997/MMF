@@ -1,10 +1,11 @@
 ﻿using MFF.DTO.Entities.Identity;
 using MFF.DTO.Entities.SmartLab;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace MFF.Data.SmartLab
 {
-    public class SmartLabDB : DbContext
+    public class SmartLabDB : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
         public SmartLabDB(DbContextOptions<SmartLabDB> options)
         : base(options)
@@ -15,8 +16,22 @@ namespace MFF.Data.SmartLab
         public DbSet<Permission> Permissions { get; set; }
         public DbSet<ApplicationRoleMenu> RoleMenus { get; set; }
         public DbSet<BanCanMia> BanCanMia { get; set; }
+        public DbSet<LenhSanXuatERP> LenhSanXuatERP { get; set; }
+        public DbSet<ThongTinTieuHao> ThongTinTieuHao { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            base.OnModelCreating(builder);
+            builder.Entity<LenhSanXuatERP>()
+               .HasKey(c => new { c.Id });
+            builder.Entity<LenhSanXuatERP>().Property(ent => ent.Id).ValueGeneratedOnAdd();
+
+
+            base.OnModelCreating(builder);
+            builder.Entity<ThongTinTieuHao>()
+               .HasKey(c => new { c.Id });
+            builder.Entity<ThongTinTieuHao>().Property(ent => ent.Id).ValueGeneratedOnAdd();
+
             builder.Entity<BanCanMia>()
                 .HasKey(c => new { c.Ma_BanCanMia });
 
@@ -75,5 +90,24 @@ namespace MFF.Data.SmartLab
             });
 
         }
+    }
+
+    public class TTCSLabDB:DbContext
+    {
+        public TTCSLabDB(DbContextOptions<TTCSLabDB> options)
+        : base(options)
+        {
+        }
+        public DbSet<LenhSanXuatERP> LenhSanXuatERP { get; set; }
+        public DbSet<ThongTinTieuHao> ThongTinTieuHao { get; set; }
+    }
+    public class BHSTALabDB : DbContext
+    {
+        public BHSTALabDB(DbContextOptions<BHSTALabDB> options)
+        : base(options)
+        {
+        }
+        public DbSet<LenhSanXuatERP> LenhSanXuatERP { get; set; }
+        public DbSet<ThongTinTieuHao> ThongTinTieuHao { get; set; }
     }
 }

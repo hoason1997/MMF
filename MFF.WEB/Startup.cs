@@ -1,15 +1,22 @@
 using AutoMapper;
 using MFF.Data.SmartLab;
+using MFF.DTO.Entities.Identity;
 using MFF.DTO.Middlewares;
+using MFF.Infrastructure;
 using MFF.Infrastructure.Configurations;
 using MFF.Infrastructure.Mapping;
+using MFF.Infrastructure.Services;
+using MFF.WEB.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Reflection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace MFF.WEB
 {
@@ -31,40 +38,47 @@ namespace MFF.WEB
 
         protected void ConfigureDefaultServices(IServiceCollection services)
         {
-       //    services.AddTransient<IBanCanMiaService, BanCanMiaService>();
             services.AddAppConfig(Configuration);
             services.AddAutoMapper(typeof(IMappingProfile));
-         //   services.AddAutoMapperConfig();
+            services.AddTransient<ApplicationUserManager>();
+            services.AddTransient<IRedisCacheService, RedisCacheService>();
+            services.AddTransient<IMenuService, MenuService>();
+
+            services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+              .AddRoles<ApplicationRole>()
+              .AddEntityFrameworkStores<SmartLabDB>()
+              .AddRoleManager<RoleManager<ApplicationRole>>()
+              .AddSignInManager<SignInManager<ApplicationUser>>()
+              .AddUserManager<UserManager<ApplicationUser>>();
+
+            services.AddTransient<IInitData, InitData>();
+            //    services.AddTransient<IBanCanMiaService, BanCanMiaService>();          
             services.Configure<CookiePolicyOptions>(options => { options.CheckConsentNeeded = context => true; });
-            //services.AddDefaultIdentity<User>()
-            //    .AddDefaultUI()
-            //    .AddUserStore<MFFUserStore>();
             services.AddControllersWithViews()
                 .AddNewtonsoftJson();
-            // services.AddRazorPages();
-            //services.AddScoped<IMFFItemService, MFFItemService>();
+            services.AddRazorPages();
 
             services.AddMvc(option => option.EnableEndpointRouting = false);
 
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddFacebook(facebookOptions =>
-                    {
-                        facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
-                        facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
-                    })
-                .AddGoogle(googleOptions =>
-                    {
-                        IConfigurationSection googleAuthNSection =
-                        Configuration.GetSection("Authentication:Google");
-                        googleOptions.ClientId = googleAuthNSection["ClientId"];
-                        googleOptions.ClientSecret = googleAuthNSection["ClientSecret"];
-                    })
-                .AddMicrosoftAccount(microsoftOptions =>
-                    {
-                        microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
-                        microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
-                    })
+                //.AddFacebook(facebookOptions =>
+                //    {
+                //        facebookOptions.AppId = Configuration["Authentication:Facebook:AppId"];
+                //        facebookOptions.AppSecret = Configuration["Authentication:Facebook:AppSecret"];
+                //    })
+                //.AddGoogle(googleOptions =>
+                //    {
+                //        IConfigurationSection googleAuthNSection =
+                //        Configuration.GetSection("Authentication:Google");
+                //        googleOptions.ClientId = googleAuthNSection["ClientId"];
+                //        googleOptions.ClientSecret = googleAuthNSection["ClientSecret"];
+                //    })
+                //.AddMicrosoftAccount(microsoftOptions =>
+                //    {
+                //        microsoftOptions.ClientId = Configuration["Authentication:Microsoft:ClientId"];
+                //        microsoftOptions.ClientSecret = Configuration["Authentication:Microsoft:ClientSecret"];
+                //    })
                 .AddCookie(config =>
                   {
                       config.Cookie.Name = "UserLoginCookie";
@@ -76,49 +90,45 @@ namespace MFF.WEB
         protected virtual void ConfigureDatabaseServices(IServiceCollection services)
         {
             #region SQLite
-            services.AddDbContext<SmartLabDB>(options =>
-                options.UseSqlite(
-                    Configuration.GetConnectionString("DefaultConnection"),
-                    builder => builder.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name)
-                ));
+            //services.AddDbContext<SmartLabDB>(options =>
+            //    options.UseSqlite(
+            //        Configuration.GetConnectionString("DefaultConnection"),
+            //        builder => builder.MigrationsAssembly(typeof(Startup).GetTypeInfo().Assembly.GetName().Name)
+            //    ));
             #endregion
 
-            //   services.AddDbContext<BanCanMiaPhapLyDB>(options =>
-            //    options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnection")));
+            services.AddDbContext<SmartLabDB>(options =>
+             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //        services.AddDbContext<SmartLabDB>(options =>
             //options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnect")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
-            //    if (env.IsDevelopment())
-            //    {
-            //        app.UseDeveloperExceptionPage();
-            //    }
-            //    else
-            //    {
-            //        app.UseExceptionHandler("/Home/Error");
-            //        // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-            //        app.UseHsts();
-            //    }  
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+            //else
+            //{
+            //    app.UseExceptionHandler("/Home/Error");
+            //    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+            //    app.UseHsts();
+            //}
             app.UseDeveloperExceptionPage();
             app.UseMiddleware(typeof(ExceptionHandlingMiddleware));
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-        
             app.UseRouting();
-
             app.UseCookiePolicy();
             app.UseAuthorization();
+            loggerFactory.AddSerilog();
             app.UseEndpoints(endpoints =>
             {
-               // endpoints.MapControllerRoute("default", "{controller=BanCanMia}/{action=Index}/");
-                // endpoints.MapRazorPages();
-
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=SmartLab}/{controller=Demo2}/{action=Grid}");
+                    pattern: "{area=SmartLab}/{controller=home}/{action=index}");
 
                 //endpoints.MapControllerRoute(
                 //    name: "AVC",
@@ -126,12 +136,6 @@ namespace MFF.WEB
 
                 endpoints.MapRazorPages();
             });
-            //app.UseMvc(routes =>
-            //{
-            //    routes.MapRoute(
-            //        name: "default",
-            //        template: "{controller=NhanVien}/{action=Index}");
-            //});            
         }
     }
 }

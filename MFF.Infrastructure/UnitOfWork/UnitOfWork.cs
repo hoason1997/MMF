@@ -31,15 +31,16 @@ namespace MFF.Infrastructure.UnitOfWork
             this.serviceProvider = serviceProvider;
         }
 
-        public IRepository<TEntity> Repository<TEntity>() where TEntity : BaseEntity
+        public IBaseRepository<TEntity> Repository<TEntity>() where TEntity : class, IEntity
         {
-            if (Repositories.Keys.Contains(typeof(TEntity)))
+            var type = typeof(TEntity);
+            if (Repositories.Keys.Contains(type))
             {
-                return Repositories[typeof(TEntity)] as IRepository<TEntity>;
+                return Repositories[type] as IBaseRepository<TEntity>;
             }
 
-            var repo = serviceProvider.GetRequiredService<IRepository<TEntity>>();
-            Repositories.Add(typeof(TEntity), repo);
+            var repo = serviceProvider.GetRequiredService<IBaseRepository<TEntity>>();
+            Repositories.Add(type, repo);
             return repo;
         }
 

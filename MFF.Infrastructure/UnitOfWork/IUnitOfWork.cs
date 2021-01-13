@@ -6,7 +6,7 @@ namespace MFF.Infrastructure.UnitOfWork
 {
     public interface IUnitOfWork
     {
-        IRepository<TEntity> Repository<TEntity>() where TEntity : BaseEntity;
+        IBaseRepository<TEntity> Repository<TEntity>() where TEntity : class, IEntity;
         Task<int> SaveChangesAsync();
         int SaveChanges();
     }

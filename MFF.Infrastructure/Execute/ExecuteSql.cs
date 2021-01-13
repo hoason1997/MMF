@@ -1,4 +1,4 @@
-﻿using MFF.Data;
+﻿using MFF.Data.SmartLab;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
@@ -9,9 +9,9 @@ namespace MFF.Infrastructure.Execute
     public class ExecuteSql : IExecuteSql
     {
         //private readonly MFFDbContext appDbContext;
-        private readonly MFFDbContext appDbContext;
+        private readonly SmartLabDB appDbContext;
         //public ExecuteSql(MFFDbContext appDbContext)
-        public ExecuteSql(MFFDbContext appDbContext)
+        public ExecuteSql(SmartLabDB appDbContext)
         {
             this.appDbContext = appDbContext;
         }

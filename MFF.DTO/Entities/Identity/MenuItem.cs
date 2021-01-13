@@ -18,18 +18,20 @@ namespace MFF.DTO.Entities.Identity
         public int Id { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(150)]
         public string Title { get; set; }
 
-        [StringLength(100)]
+        [StringLength(150)]
         public string Description { get; set; }
 
         public int? ParentId { get; set; }
 
         [StringLength(50)]
         public string Icon { get; set; }
+        [StringLength(20)]
+        public string Code { get; set; }
 
-        [StringLength(50)]
+        [StringLength(150)]
         public string Url { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

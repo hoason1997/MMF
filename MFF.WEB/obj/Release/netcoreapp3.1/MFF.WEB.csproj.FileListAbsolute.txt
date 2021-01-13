@@ -213,9 +213,8 @@ D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Areas\SmartLab\Views\Demo2\Index.
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Areas\SmartLab\Views\Demo3\Add.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Areas\SmartLab\Views\Demo3\Grid.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Areas\SmartLab\Views\Demo3\Index.cshtml.g.cs
-D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\Components\MenuComponent\Default.cshtml.g.cs
+D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Areas\SmartLab\Views\Home\Index.cshtml.g.cs
+D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\Components\Menu\Default.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -223,6 +222,7 @@ D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Template2.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Template3.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\Shared\_Version.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.RazorTargetAssemblyInfo.cache

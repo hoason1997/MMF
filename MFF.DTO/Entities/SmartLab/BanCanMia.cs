@@ -15,10 +15,6 @@ namespace MFF.DTO.Entities.SmartLab
         public decimal? TanMia { get; set; }
         public decimal? TanMiaTho { get; set; }
         public bool? Xoa { get; set; }
-        public string Mota { get; set; }
-        public string TaoBoi { get; set; }
-        public DateTime? NgayTao { get; set; }
-        public DateTime? NgayCapNhat { get; set; }
-        public string CapNhatBoi { get; set; }     
+        public string Mota { get; set; }     
     }
 }

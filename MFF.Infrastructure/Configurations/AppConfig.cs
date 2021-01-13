@@ -19,10 +19,10 @@ namespace MFF.Infrastructure.Configurations
         public static void AddAppConfig(this IServiceCollection services, IConfiguration configuration)
         {
             //  services.AddScoped<IAccountService, AccountService>();
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork.UnitOfWork>();
             services.AddTransient<IRedisCacheService, RedisCacheService>();
-            services.AddTransient<IService, Service>();
+            services.AddScoped(typeof(IService<>), typeof(Service<>));
             services.AddTransient<IBanCanMiaService, BanCanMiaService>();
             services.AddHttpContextAccessor();
             ////services.AddScoped<IExecuteSql, ExecuteSql>();

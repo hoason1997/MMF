@@ -20,19 +20,18 @@ using System.Threading.Tasks;
 
 namespace MFF.Infrastructure.Services
 {
-    public class BanCanMiaService : Service, IBanCanMiaService
+    public class BanCanMiaService : Service<BanCanMia>, IBanCanMiaService
     {
-        private readonly IRepository<BanCanMia> postRepo;
-        private readonly IMemoryCache _cache;
+        private readonly IBaseRepository<BanCanMia> _repoBanCanMia;
+
         public BanCanMiaService(IUnitOfWork unitOfWork, IMapper mapper, IRedisCacheService redisCache, IHttpContextAccessor httpContextAccessor, IMemoryCache cache)
             : base(unitOfWork, mapper, redisCache, httpContextAccessor)
         {
-            postRepo = unitOfWork.Repository<BanCanMia>();
-            _cache = cache;
+            _repoBanCanMia = unitOfWork.Repository<BanCanMia>();
         }
         public async Task<IEnumerable<BanCanMiaModel>> GetAllAsync()
         {
-            var posts = await postRepo
+            var posts = await _repoBanCanMia
                     .Query()
                     .ProjectTo<BanCanMiaModel>(mapper.ConfigurationProvider)
                     .ToListAsync();
@@ -41,7 +40,7 @@ namespace MFF.Infrastructure.Services
 
         public async Task<BanCanMiaModel> GetByIdAsync(int id)
         {
-            var data = await postRepo
+            var data = await _repoBanCanMia
                 .Query(x => x.Ma_BanCanMia == id)
                 .ProjectTo<BanCanMiaModel>(mapper.ConfigurationProvider)
                 .FirstOrDefaultAsync();
@@ -52,11 +51,11 @@ namespace MFF.Infrastructure.Services
         {
             var predicate = new List<Expression<Func<BanCanMia, bool>>> { x => true };
             //predicate.Add(x => x.CategoryId.Contains(string.Format(Constant.QueryFormat, categoryId)));
-            var query = postRepo.Query(predicate.Aggregate((a, b) => a.And(b)));//, orderBy: x => x.OrderByDescending(z => z.CreatedTime));
+            var query = _repoBanCanMia.Query(predicate.Aggregate((a, b) => a.And(b)));//, orderBy: x => x.OrderByDescending(z => z.CreatedTime));
             var data = await query.ToPaginateAsync<BanCanMia, BanCanMiaModel>(mapper, index, size, 0);
             return data;
         }
-        public async Task<IPagination<BanCanMiaModel>> GetPagingAsync(int index, int size,string keyword = null, string orderCol = null, string orderType = null)
+        public async Task<IPagination<BanCanMiaModel>> GetPagingAsync(int index, int size, string keyword = null, string orderCol = null, string orderType = null)
         {
             var predicate = new List<Expression<Func<BanCanMia, bool>>> { x => true };
 
@@ -83,7 +82,7 @@ namespace MFF.Infrastructure.Services
                     orderBy = OrderByHelper.GetOrderBy<BanCanMia>(orderCol, orderType);
             }
 
-            var query = postRepo.Query(predicate.Aggregate((a, b) => a.And(b)), orderBy);
+            var query = _repoBanCanMia.Query(predicate.Aggregate((a, b) => a.And(b)), orderBy);
 
             var data = await query.ToPaginateAsync<BanCanMia, BanCanMiaModel>(mapper, index, size, 0);
             return data;
@@ -92,7 +91,7 @@ namespace MFF.Infrastructure.Services
         public async Task<BanCanMiaDetailModel> GetOneAsync(Expression<Func<BanCanMia, bool>> predicate = null
             , Func<IQueryable<BanCanMia>, IIncludableQueryable<BanCanMia, object>> include = null)
         {
-            var query = postRepo.Query(predicate, null, include);
+            var query = _repoBanCanMia.Query(predicate, null, include);
             return await query.ProjectTo<BanCanMiaDetailModel>(mapper.ConfigurationProvider).FirstOrDefaultAsync();
         }
 
@@ -103,12 +102,11 @@ namespace MFF.Infrastructure.Services
 
             var post = mapper.Map<BanCanMia>(model);
 
-            post.TaoBoi = post.CapNhatBoi = LogedInUserId;
+            post.TaoBoi = post.CapNhatBoi;// = LogedInUserId;
 
-            await postRepo.AddAsync(post);
+           await _repoBanCanMia.AddAsync(post);
             var saveResult = await unitOfWork.SaveChangesAsync();
-
-            if (saveResult > 0) return post.Ma_BanCanMia+ string.Empty;
+            if (saveResult > 0) return post.Ma_BanCanMia + string.Empty;
             return string.Empty;
         }
 
@@ -116,18 +114,18 @@ namespace MFF.Infrastructure.Services
         {
             if (model == null)
                 throw new ArgumentException();
-            var post = await postRepo.Query().FirstOrDefaultAsync(x => x.Ma_BanCanMia == id);
+            var post = await _repoBanCanMia.Query().FirstOrDefaultAsync(x => x.Ma_BanCanMia == id);
 
             if (post == null)
                 throw new MethodAccessException(MessageConstant.POST_NOT_FOUND);
 
             var postUpdate = mapper.Map(model, post);
 
-            postUpdate.UpdatedTime = DateTime.UtcNow;
-            postUpdate.UpdatedBy = LogedInUserId;
+            postUpdate.NgayCapNhat = DateTime.UtcNow;
+            postUpdate.CapNhatBoi = "";// LogedInUserId;
             postUpdate.Ma_BanCanMia = id;
 
-            postRepo.Update(postUpdate);
+            _repoBanCanMia.Update(postUpdate);
             var saveResult = await unitOfWork.SaveChangesAsync();
 
             if (saveResult <= 0)
@@ -138,11 +136,11 @@ namespace MFF.Infrastructure.Services
 
         public async Task DeleteAsync(int id)
         {
-            var post = await postRepo.Query(x => x.Ma_BanCanMia == id).FirstOrDefaultAsync();
+            var post = await _repoBanCanMia.Query(x => x.Ma_BanCanMia == id).FirstOrDefaultAsync();
 
             if (post != null)
             {
-                postRepo.Delete(post);
+                _repoBanCanMia.Delete(post);
                 var result = await unitOfWork.SaveChangesAsync();
                 if (result <= 0)
                 {

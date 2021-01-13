@@ -1,3 +1,4 @@
+using MFF.Data.SmartLab;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
@@ -11,7 +12,7 @@ namespace MFF.WEB
         {
             //CreateHostBuilder(args)
             //.Build()
-            //.MigrateDbContext<MFFDbContext>(serviceProvider =>
+            //.MigrateDbContext<SmartLabDB>(serviceProvider =>
             //{
             //    var context = serviceProvider.GetRequiredService<MFFDbContext>();
             //    if (!context.MFFItem.Any())

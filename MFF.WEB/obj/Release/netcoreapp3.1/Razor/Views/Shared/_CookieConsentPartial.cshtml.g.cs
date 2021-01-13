@@ -13,15 +13,8 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "D:\MMF\MFF.WEB\Views\_ViewImports.cshtml"
-using MFF.WEB;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 2 "D:\MMF\MFF.WEB\Views\_ViewImports.cshtml"
-using MFF.WEB.Models;
+using MFF.Infrastructure.Models;
 
 #line default
 #line hidden
@@ -34,7 +27,7 @@ using Microsoft.AspNetCore.Http.Features;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9caef4357b5eb5f716e3caa9011efb4b53c66cfc", @"/Views/Shared/_CookieConsentPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0abed9a9635e9508344c38786eea2dfe2c025903", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"baee1b558c19fc1bd8cc803f75ae446f0ad9ed29", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__CookieConsentPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

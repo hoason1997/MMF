@@ -13,15 +13,8 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
-#line 1 "D:\MMF\MFF.WEB\Views\_ViewImports.cshtml"
-using MFF.WEB;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 2 "D:\MMF\MFF.WEB\Views\_ViewImports.cshtml"
-using MFF.WEB.Models;
+using MFF.Infrastructure.Models;
 
 #line default
 #line hidden
@@ -41,7 +34,7 @@ using MFF.DTO.BaseEntities;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3ae9d35a56649b5580552aef1a68d9f236ddd236", @"/Views/Shared/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5484e61c1fc83147f790f22c08f0583ffb52cd14", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"baee1b558c19fc1bd8cc803f75ae446f0ad9ed29", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

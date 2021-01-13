@@ -3185,6 +3185,7 @@
         "dependencies": {
           "MFF.DTO": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.10",
           "Microsoft.Extensions.Caching.Redis": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "3.1.10"
         },
