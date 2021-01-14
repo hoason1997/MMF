@@ -104,7 +104,7 @@ namespace MFF.Infrastructure.Services
 
             post.TaoBoi = post.CapNhatBoi;// = LogedInUserId;
 
-           await _repoBanCanMia.AddAsync(post);
+            await _repoBanCanMia.AddAsync(post);
             var saveResult = await unitOfWork.SaveChangesAsync();
             if (saveResult > 0) return post.Ma_BanCanMia + string.Empty;
             return string.Empty;
@@ -149,5 +149,4 @@ namespace MFF.Infrastructure.Services
             }
         }
     }
-
 }

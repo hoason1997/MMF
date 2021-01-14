@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "zzgAt/A32Iu6vG+tJdnQuTPeXJoFtHvmQluLLX636dRIkznlVbk2UjDfonmE4Dc6T6VLEr6ZA1aIUb3tpXIg6g==",
+  "dgSpecHash": "+WlvGyFCE4YjbmlQPpD3Of3J+3YgJlwqdt3tbbR0rnFJNQJQwKucjqDbvMCEVdjVvd4wTNsOvkXlRzFGTbuOJg==",
   "success": true,
   "projectFilePath": "D:\\MMF\\MFF.ERPAPI\\MFF.ERPAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\jsonwebtokens\\4.0.0\\jsonwebtokens.4.0.0.nupkg.sha512",

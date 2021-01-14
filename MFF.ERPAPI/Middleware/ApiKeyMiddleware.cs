@@ -32,7 +32,6 @@ namespace MFF.ERPAPI.Middleware
                 await context.Response.WriteAsync("Unauthorized client.");
                 return;
             }
-
             await _next(context);
         }
     }

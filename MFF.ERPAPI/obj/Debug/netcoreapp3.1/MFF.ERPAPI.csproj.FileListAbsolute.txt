@@ -6,6 +6,7 @@ D:\MMF\MFF.ERPAPI\bin\Debug\netcoreapp3.1\MFF.ERPAPI.runtimeconfig.json
 D:\MMF\MFF.ERPAPI\bin\Debug\netcoreapp3.1\MFF.ERPAPI.runtimeconfig.dev.json
 D:\MMF\MFF.ERPAPI\bin\Debug\netcoreapp3.1\MFF.ERPAPI.dll
 D:\MMF\MFF.ERPAPI\bin\Debug\netcoreapp3.1\MFF.ERPAPI.pdb
+D:\MMF\MFF.ERPAPI\bin\Debug\netcoreapp3.1\Autofac.dll
 D:\MMF\MFF.ERPAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
 D:\MMF\MFF.ERPAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\MMF\MFF.ERPAPI\bin\Debug\netcoreapp3.1\JsonWebTokens.dll

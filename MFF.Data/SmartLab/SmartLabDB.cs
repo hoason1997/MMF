@@ -91,23 +91,4 @@ namespace MFF.Data.SmartLab
 
         }
     }
-
-    public class TTCSLabDB:DbContext
-    {
-        public TTCSLabDB(DbContextOptions<TTCSLabDB> options)
-        : base(options)
-        {
-        }
-        public DbSet<LenhSanXuatERP> LenhSanXuatERP { get; set; }
-        public DbSet<ThongTinTieuHao> ThongTinTieuHao { get; set; }
-    }
-    public class BHSTALabDB : DbContext
-    {
-        public BHSTALabDB(DbContextOptions<BHSTALabDB> options)
-        : base(options)
-        {
-        }
-        public DbSet<LenhSanXuatERP> LenhSanXuatERP { get; set; }
-        public DbSet<ThongTinTieuHao> ThongTinTieuHao { get; set; }
-    }
 }

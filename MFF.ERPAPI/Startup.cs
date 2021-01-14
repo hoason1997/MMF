@@ -1,18 +1,14 @@
-using AutoMapper;
-using MFF.Data.SmartLab;
-using MFF.ERPAPI.Middleware;
-using MFF.ERPAPI.Services;
-using MFF.Infrastructure.Mapping;
-using MFF.Infrastructure.Repositories;
-using MFF.Infrastructure.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
 using Serilog;
+using MFF.ERPAPI.Database;
+using MFF.ERPAPI.Factories;
+using MFF.ERPAPI.Middleware;
 
 namespace MFF.ERPAPI
 {
@@ -29,13 +25,19 @@ namespace MFF.ERPAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-            services.AddTransient<ILSXService, LSXService>();
-            services.AddTransient<ITTTieuHaoService, TTTieuHaoService>();
-            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddAutoMapper(typeof(IMappingProfile));
-            services.AddDbContext<SmartLabDB>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddTransient<ILSXService, LSXService>();
+            //services.AddTransient<ITTTieuHaoService, TTTieuHaoService>();
+            //   services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            //   services.AddScoped<IUnitOfWork, UnitOfWork>();
+            //  services.AddAutoMapper(typeof(IMappingProfile));
+            services.AddDbContext<BHSTADBContext>(options =>
+           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")))
+           .AddUnitOfWork<BHSTADBContext>();
+            //    .AddCustomRepository<Blog, CustomBlogRepository>(););
+
+            services.AddDbContext<TTCSDBContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))).AddUnitOfWork<TTCSDBContext>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

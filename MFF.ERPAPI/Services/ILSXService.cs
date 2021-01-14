@@ -1,10 +1,10 @@
-﻿using MFF.DTO.Entities.SmartLab;
+﻿using MFF.ERPAPI.Entities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MFF.ERPAPI.Services
 {
-    public interface ILSXService 
+    public interface ILSXRepository
     {
         Task<int> AddAsync(IEnumerable<LenhSanXuatERP> items);
         Task<int> UpdateAsync(IEnumerable<LenhSanXuatERP> items);      

@@ -1,10 +1,9 @@
-﻿using MFF.DTO.Entities.SmartLab;
-using MFF.DTO.Helpers;
-using MFF.ERPAPI.Services;
-using MFF.Infrastructure.Models;
+﻿using MFF.ERPAPI.Database;
+using MFF.ERPAPI.Entities;
+using MFF.ERPAPI.Factories;
+using MFF.ERPAPI.Helper;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Net;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -15,12 +14,12 @@ namespace MFF.ERPAPI.Controllers
     [ApiController]
     public class ERPSMLController : ControllerBase
     {
-        public readonly ILSXService _service;
-        public readonly ITTTieuHaoService _ttsvservice;
-        public ERPSMLController(ILSXService service, ITTTieuHaoService ttsvservice)
+        private readonly IUnitOfWork _unitOfWorkTA;
+        private readonly IUnitOfWork _unitOfWorkTTC;
+        public ERPSMLController(IUnitOfWork<BHSTADBContext> unitOfWork, IUnitOfWork<TTCSDBContext> unitOfWorkTTC)
         {
-            _service = service;
-            _ttsvservice = ttsvservice;
+            _unitOfWorkTA = unitOfWork;
+            _unitOfWorkTTC = unitOfWorkTTC;
         }
         [HttpGet("test")]
         public string Get()
@@ -29,32 +28,64 @@ namespace MFF.ERPAPI.Controllers
         }
         // POST api/<ERPSMLController>
         [HttpPost("import-lenh-san-xuat-from-erp")]
-        [ProducesResponseType(typeof(SuccessResponseModel<LenhSanXuatERP>), (int)HttpStatusCode.OK)]
-        public async Task<IActionResult> ImporLSXtERPtoSmartlab([FromBody] List<LenhSanXuatERP> items)
+        public async Task<int> ImporLSXtERPtoSmartlab([FromBody] List<LenhSanXuatERP> items)
         {
-            var rs = await _service.AddAsync(items);
-            if (rs > 0)
+            try
             {
-                return ResponseHelper.Success();
+                var ta = _unitOfWorkTA.GetRepository<LenhSanXuatERP>();
+                var ttc = _unitOfWorkTTC.GetRepository<LenhSanXuatERP>();
+                foreach (var item in items)
+                {
+                    switch (item.BUSINESS_UNIT_NAME)
+                    {
+                        case TextContant.Orther:
+                            ta.UpdateOrInSert(item, x => x.WORK_ORDER_ID == item.WORK_ORDER_ID);
+                            break;
+                        case TextContant.TTCS:
+                            ttc.UpdateOrInSert(item, x => x.WORK_ORDER_ID == item.WORK_ORDER_ID);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                await _unitOfWorkTA.SaveChangesAsync();
+                await _unitOfWorkTTC.SaveChangesAsync();
+                return 1;
             }
-            else
+            catch (System.Exception ex)
             {
-                return ResponseHelper.BadRequest("Cập nhật lỗi");
+                return 0;
             }
         }
 
         [HttpPost("import-thong-tin-tieu-hao-from-erp")]
-        [ProducesResponseType(typeof(SuccessResponseModel<ThongTinTieuHao>), (int)HttpStatusCode.OK)]
-        public async Task<IActionResult> ImporTTTieuHaotERPtoSmartlab([FromBody] List<ThongTinTieuHao> items)
+        public async Task<int> ImporTTTieuHaotERPtoSmartlab([FromBody] List<ThongTinTieuHao> items)
         {
-            var rs = await _ttsvservice.AddAsync(items);
-            if (rs > 0)
+            try
             {
-                return ResponseHelper.Success();
+                var ta = _unitOfWorkTA.GetRepository<ThongTinTieuHao>();
+                var ttc = _unitOfWorkTTC.GetRepository<ThongTinTieuHao>();
+                foreach (var item in items)
+                {
+                    switch (item.BUSINESS_UNIT_NAME)
+                    {
+                        case TextContant.Orther:
+                            ta.UpdateOrInSert(item, x => x.TRANSACTION_ID == item.TRANSACTION_ID);
+                            break;
+                        case TextContant.TTCS:
+                            ttc.UpdateOrInSert(item, x => x.TRANSACTION_ID == item.TRANSACTION_ID);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+                await _unitOfWorkTA.SaveChangesAsync();
+                await _unitOfWorkTTC.SaveChangesAsync();
+                return 1;
             }
-            else
+            catch (System.Exception ex)
             {
-                return ResponseHelper.BadRequest("Cập nhật lỗi");
+                return 0;
             }
         }
     }
