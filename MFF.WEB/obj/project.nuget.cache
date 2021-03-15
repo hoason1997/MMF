@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mwehc15aElJXZfbRvvI98dy5u4B+m2dV5PUibcWYB9crOe9EtL+R4HHFJQaPgQW1Gi8Gf1iQoZbSRYJH0gG/Rg==",
+  "dgSpecHash": "WapqyMF1UIpcO9Jkm/HBf/M/THuZuoyG2kezwe26Jt8Fm9VtzoMYd2w+msLbdj65c16lXESB6A99iigBWpswYA==",
   "success": true,
   "projectFilePath": "D:\\MMF\\MFF.WEB\\MFF.WEB.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\jsonwebtokens\\4.0.0\\jsonwebtokens.4.0.0.nupkg.sha512",

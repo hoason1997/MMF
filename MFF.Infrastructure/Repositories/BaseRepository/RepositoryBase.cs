@@ -1,4 +1,5 @@
-﻿using MFF.Infrastructure.UnitOfWork;
+﻿using MFF.Infrastructure.Repositories.Factories;
+using MFF.Infrastructure.UnitOfWork;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
 using System;
@@ -35,7 +36,7 @@ namespace MFF.Infrastructure.Repositories
 
         public IQueryable<TEntity> Query(string sql, params object[] parameters)
         {
-            return dbSet.FromSqlRaw(sql, parameters);
+            return _dbSet.FromSqlRaw(sql, parameters);
         }
 
         public IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate = null
