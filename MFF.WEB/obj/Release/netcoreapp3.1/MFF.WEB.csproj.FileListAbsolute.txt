@@ -232,3 +232,4 @@ D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.csproj.CopyComplete
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.dll
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.pdb
 D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\MFF.WEB.genruntimeconfig.cache
+D:\MMF\MFF.WEB\obj\Release\netcoreapp3.1\Razor\Areas\SmartLab\Views\_ViewStart.cshtml.g.cs

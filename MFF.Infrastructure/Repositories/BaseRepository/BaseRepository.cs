@@ -13,10 +13,10 @@ namespace MFF.Infrastructure.Repositories
     public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class,IEntity
     {
         //  private readonly MFFDbContext dbContext;
-        private readonly SmartLabDB dbContext;
+        private readonly SmartLabDBContext dbContext;
         private readonly DbSet<TEntity> dbSet;
         // public Repository(MFFDbContext dbContext)
-        public BaseRepository(SmartLabDB dbContext)
+        public BaseRepository(SmartLabDBContext dbContext)
         {
             this.dbContext = dbContext;
             dbSet = dbContext.Set<TEntity>();

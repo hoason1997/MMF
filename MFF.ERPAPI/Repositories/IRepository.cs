@@ -128,11 +128,11 @@ namespace MFF.ERPAPI.Repositories
         /// <param name="ignoreQueryFilters">Ignore query filters</param>
         /// <returns>An <see cref="IPagedList{TEntity}"/> that contains elements that satisfy the condition specified by <paramref name="predicate"/>.</returns>
         /// <remarks>This method defaults to a read-only, no-tracking query.</remarks>
-        TEntity GetFirstOrDefault(Expression<Func<TEntity, bool>> predicate = null,
-                                  Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-                                  Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
-                                  bool disableTracking = true,
-                                  bool ignoreQueryFilters = false);
+        ////TEntity GetFirstOrDefault(Expression<Func<TEntity, bool>> predicate = null,
+        ////                          Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
+        ////                          Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
+        ////                          bool disableTracking = true,
+        ////                          bool ignoreQueryFilters = false);
 
         /// <summary>
         /// Gets the first or default entity based on a predicate, orderby delegate and include delegate. This method defaults to a read-only, no-tracking query.
@@ -180,11 +180,11 @@ namespace MFF.ERPAPI.Repositories
         /// <param name="ignoreQueryFilters">Ignore query filters</param>
         /// <returns>An <see cref="IPagedList{TEntity}"/> that contains elements that satisfy the condition specified by <paramref name="predicate"/>.</returns>
         /// <remarks>Ex: This method defaults to a read-only, no-tracking query. </remarks>
-        Task<TEntity> GetFirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate = null,
-            Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
-            Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
-            bool disableTracking = true,
-            bool ignoreQueryFilters = false);
+        //Task<TEntity> GetFirstOrDefaultAsync(Expression<Func<TEntity, bool>> predicate = null,
+        //    Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null,
+        //    Func<IQueryable<TEntity>, IIncludableQueryable<TEntity, object>> include = null,
+        //    bool disableTracking = true,
+        //    bool ignoreQueryFilters = false);
 
         /// <summary>
         /// Uses raw SQL queries to fetch the specified <typeparamref name="TEntity" /> data.
@@ -453,6 +453,7 @@ namespace MFF.ERPAPI.Repositories
         /// </summary>
         /// <param name="entities"></param>
         void UpdateOrInSert(TEntity entities, Expression<Func<TEntity, bool>> predicate = null);
+             
         /// <summary>
         /// Change entity state for patch method on web api.
         /// </summary>

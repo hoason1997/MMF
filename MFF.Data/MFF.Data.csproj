@@ -5,8 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BaseDBContext\**" />
     <Compile Remove="DefaultDB\**" />
+    <EmbeddedResource Remove="BaseDBContext\**" />
     <EmbeddedResource Remove="DefaultDB\**" />
+    <None Remove="BaseDBContext\**" />
     <None Remove="DefaultDB\**" />
   </ItemGroup>
 
@@ -19,6 +22,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MFF.DTO\MFF.DTO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

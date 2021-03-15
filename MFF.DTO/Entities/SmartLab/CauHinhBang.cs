@@ -26,6 +26,7 @@ namespace MFF.DTO.Entities.SmartLab
         public Nullable<System.DateTime> NgayTao { get; set; }
         public string CapNhatBoi { get; set; }
         public Nullable<System.DateTime> NgayCapNhat { get; set; }
-        public string TenDongRutGon { get; set; }
+        //public string TenDongRutGon { get; set; }
+        public string MaERP { get; set; }
     }
 }

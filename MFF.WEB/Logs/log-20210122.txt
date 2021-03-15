@@ -1,0 +1,12 @@
+2021-01-22 11:03:47.598 +07:00 [Error] Failed executing DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""CREATE TABLE [AspNetMenu] (
+    [Id] int NOT NULL IDENTITY,
+    [Title] nvarchar(150) NOT NULL,
+    [Description] nvarchar(150) NULL,
+    [ParentId] int NULL,
+    [Icon] nvarchar(50) NULL,
+    [Code] nvarchar(20) NULL,
+    [Url] nvarchar(150) NULL,
+    CONSTRAINT [PK_AspNetMenu] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_AspNetMenu_AspNetMenu_ParentId] FOREIGN KEY ([ParentId]) REFERENCES [AspNetMenu] ([Id]) ON DELETE NO ACTION
+);"

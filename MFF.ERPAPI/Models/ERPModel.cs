@@ -30,7 +30,7 @@ namespace MFF.ERPAPI.Models
         [StringLength(15)]
         public string BU { get; set; }
     }
-    public class ThongTinTieuHaoModel
+    public class ThongTinTieuHaoImportModel
     {
         [StringLength(30)]
         public string ORGANIZATION_CODE { get; set; }

@@ -46,7 +46,7 @@ namespace MFF.WEB
 
             services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
               .AddRoles<ApplicationRole>()
-              .AddEntityFrameworkStores<SmartLabDB>()
+              .AddEntityFrameworkStores<SmartLabDBContext>()
               .AddRoleManager<RoleManager<ApplicationRole>>()
               .AddSignInManager<SignInManager<ApplicationUser>>()
               .AddUserManager<UserManager<ApplicationUser>>();
@@ -97,7 +97,7 @@ namespace MFF.WEB
             //    ));
             #endregion
 
-            services.AddDbContext<SmartLabDB>(options =>
+            services.AddDbContext<SmartLabDBContext>(options =>
              options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             //        services.AddDbContext<SmartLabDB>(options =>
             //options.UseSqlServer(Configuration.GetConnectionString("SmartLabConnect")));
@@ -128,7 +128,7 @@ namespace MFF.WEB
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=SmartLab}/{controller=home}/{action=index}");
+                    pattern: "{area=SmartLab}/{controller=Demo3}/{action=grid}");
 
                 //endpoints.MapControllerRoute(
                 //    name: "AVC",

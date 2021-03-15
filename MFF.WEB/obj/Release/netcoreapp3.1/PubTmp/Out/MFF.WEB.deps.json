@@ -3179,6 +3179,7 @@
         "dependencies": {
           "MFF.DTO": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.10",
           "Microsoft.Extensions.Caching.Redis": "2.2.0",
           "Microsoft.Extensions.DependencyInjection": "3.1.10"
         },
@@ -3192,6 +3193,7 @@
       "MFF.DTO/1.0.0": {
         "dependencies": {
           "JsonWebTokens": "4.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.10",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.EntityFrameworkCore": "3.1.10",
           "Newtonsoft.Json": "12.0.3",
@@ -3207,6 +3209,7 @@
       "MFF.Infrastructure/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.0",
+          "MFF.DTO": "1.0.0",
           "MFF.Data": "1.0.0",
           "Microsoft.EntityFrameworkCore.Relational": "3.1.10",
           "Refit": "5.2.4",

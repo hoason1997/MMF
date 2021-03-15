@@ -10,10 +10,10 @@ namespace MFF.Infrastructure.Services
 {
     public class MenuService : IMenuService
     {
-        private readonly SmartLabDB _context;
+        private readonly SmartLabDBContext _context;
         private readonly UserManager<ApplicationUser> _manager;
 
-        public MenuService(SmartLabDB context, UserManager<ApplicationUser> manager)
+        public MenuService(SmartLabDBContext context, UserManager<ApplicationUser> manager)
         {
             _context = context;
             _manager = manager;

@@ -1,14 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>d51ffdec-e201-46ed-8a9c-1977d48e0d00</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Database\**" />
+    <Compile Remove="Entities\**" />
     <Compile Remove="Services\**" />
+    <Content Remove="Database\**" />
+    <Content Remove="Entities\**" />
     <Content Remove="Services\**" />
+    <EmbeddedResource Remove="Database\**" />
+    <EmbeddedResource Remove="Entities\**" />
     <EmbeddedResource Remove="Services\**" />
+    <None Remove="Database\**" />
+    <None Remove="Entities\**" />
     <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Factories\IUnitOfWork.cs" />
+    <Compile Remove="Repositories\RepositoryBase.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,13 +31,18 @@
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
     <PackageReference Include="Serilog" Version="2.10.0" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="3.0.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MFF.Infrastructure\MFF.Infrastructure.csproj" />
+    <ProjectReference Include="..\MFF.Data\MFF.Data.csproj" />
+    <ProjectReference Include="..\MFF.DTO\MFF.DTO.csproj" />
   </ItemGroup>
 
 

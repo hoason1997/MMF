@@ -9,9 +9,9 @@ namespace MFF.Infrastructure.Execute
     public class ExecuteSql : IExecuteSql
     {
         //private readonly MFFDbContext appDbContext;
-        private readonly SmartLabDB appDbContext;
+        private readonly SmartLabDBContext appDbContext;
         //public ExecuteSql(MFFDbContext appDbContext)
-        public ExecuteSql(SmartLabDB appDbContext)
+        public ExecuteSql(SmartLabDBContext appDbContext)
         {
             this.appDbContext = appDbContext;
         }

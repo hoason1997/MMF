@@ -14,9 +14,9 @@ namespace MFF.WEB.Data
     {
         private readonly ApplicationUserManager _userManager;
         private readonly RoleManager<ApplicationRole> _roleManager;
-        private readonly SmartLabDB _dbContext;
+        private readonly SmartLabDBContext _dbContext;
 
-        public InitData(ApplicationUserManager manager, RoleManager<ApplicationRole> roleManager, SmartLabDB dbContext)
+        public InitData(ApplicationUserManager manager, RoleManager<ApplicationRole> roleManager, SmartLabDBContext dbContext)
         {
             _userManager = manager;
             _roleManager = roleManager;

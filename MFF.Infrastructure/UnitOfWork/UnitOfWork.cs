@@ -13,7 +13,7 @@ namespace MFF.Infrastructure.UnitOfWork
     {
         private readonly IServiceProvider serviceProvider;
         //public readonly MFFDbContext dbContext;
-        public readonly SmartLabDB dbContext;
+        public readonly SmartLabDBContext dbContext;
         private readonly Dictionary<Type, object> repositories = new Dictionary<Type, object>();
         private bool disposed = false;
 
@@ -24,7 +24,7 @@ namespace MFF.Infrastructure.UnitOfWork
         }
 
         //public UnitOfWork(MFFDbContext dbContext
-        public UnitOfWork(SmartLabDB dbContext
+        public UnitOfWork(SmartLabDBContext dbContext
             , IServiceProvider serviceProvider)
         {
             this.dbContext = dbContext;

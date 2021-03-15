@@ -10,6 +10,10 @@
 	  <None Remove="Account\**" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Compile Remove="Repositories\BaseRepository\BaseRepository.cs" />
+	</ItemGroup>
+
 	<ItemGroup>	
 		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />	
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.10" />

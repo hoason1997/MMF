@@ -12,9 +12,20 @@ namespace MFF.ERPAPI.Helper
         public const string NHS = "NHS";
         public const string SEC = "SEC";
         public const string PHANRANG = "PHANRANG";
+
         public const string TTC = "TTC";
         public const string BHSTA = "BHSTA";
-        public const string BHS = "BHS";
+        public const string BHSDN = "BHS";
+        public const string HAA = "HAA";
         public const string Orther = "TTCS BU";
+
+    }
+    public class DANHMUC
+    {
+        
+        public const string BTP = "21";
+        public const string TP = "20";
+        public const string Orther = "TTCS BU";
+
     }
 }

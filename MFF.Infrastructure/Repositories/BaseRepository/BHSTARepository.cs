@@ -13,10 +13,10 @@ namespace MFF.Infrastructure.Repositories
     public class BHSTARepository<TEntity> : IBaseRepository<TEntity> where TEntity : class,IEntity
     {
         //  private readonly MFFDbContext dbContext;
-        private readonly BHSTADB dbContext;
+        private readonly BHSTADBContext dbContext;
         private readonly DbSet<TEntity> dbSet;
         // public Repository(MFFDbContext dbContext)
-        public BHSTARepository(BHSTADB dbContext)
+        public BHSTARepository(BHSTADBContext dbContext)
         {
             this.dbContext = dbContext;
             dbSet = dbContext.Set<TEntity>();

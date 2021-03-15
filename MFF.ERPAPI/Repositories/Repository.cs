@@ -866,17 +866,20 @@ namespace MFF.ERPAPI.Repositories
         /// <param name="entities">The entities.</param>
         public virtual void Delete(IEnumerable<TEntity> entities) => _dbSet.RemoveRange(entities);
 
-        public virtual void UpdateOrInSert(TEntity entities, Expression<Func<TEntity, bool>> predicate = null)
+        public virtual void UpdateOrInSert(TEntity entity, Expression<Func<TEntity, bool>> predicate = null)
         {
-            var isUpdate = _dbSet.FirstOrDefault(predicate);
-
+            var isUpdate = _dbSet.AsNoTracking().FirstOrDefault(predicate);
             if (isUpdate != null)
             {
-                this.Update(entities);
+                var ID = isUpdate.GetType().GetProperty("Id").GetValue(isUpdate, null);
+                isUpdate = entity;
+                isUpdate.GetType().GetProperty("Id").SetValue(isUpdate, ID);
+              
+                this.Update(isUpdate);
             }
             else
             {
-                this.Insert(entities);
+                this.Insert(entity);
             }
         }
 
