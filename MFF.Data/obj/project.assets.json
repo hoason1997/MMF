@@ -8644,19 +8644,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MMF\\MFF.Data\\MFF.Data.csproj",
+      "projectUniqueName": "D:\\BMS Company\\MMF\\MFF.Data\\MFF.Data.csproj",
       "projectName": "MFF.Data",
-      "projectPath": "D:\\MMF\\MFF.Data\\MFF.Data.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\MMF\\MFF.Data\\obj\\",
+      "projectPath": "D:\\BMS Company\\MMF\\MFF.Data\\MFF.Data.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "D:\\BMS Company\\MMF\\MFF.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8670,8 +8670,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
-              "projectPath": "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj"
+            "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
+              "projectPath": "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj"
             }
           }
         }
@@ -8718,7 +8718,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

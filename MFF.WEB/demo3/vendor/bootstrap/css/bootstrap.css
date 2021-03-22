@@ -3990,7 +3990,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
-  margin: 7.5px -15px;
+    /*margin: 7.5px -15px;*/
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
 }
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -4025,9 +4029,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
     margin: 0;
   }
-  .navbar-nav > li {
-    float: left;
-  }
+    .navbar-nav > li {
+        /*float: left;*/
+        display: inline-block;
+        float: none;
+    }
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 15px;

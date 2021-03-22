@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MMF\\MFF.WEB\\MFF.WEB.csproj": {}
+    "D:\\BMS Company\\MMF\\MFF.WEB\\MFF.WEB.csproj": {}
   },
   "projects": {
-    "D:\\MMF\\MFF.Data\\MFF.Data.csproj": {
+    "D:\\BMS Company\\MMF\\MFF.Data\\MFF.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MMF\\MFF.Data\\MFF.Data.csproj",
+        "projectUniqueName": "D:\\BMS Company\\MMF\\MFF.Data\\MFF.Data.csproj",
         "projectName": "MFF.Data",
-        "projectPath": "D:\\MMF\\MFF.Data\\MFF.Data.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MMF\\MFF.Data\\obj\\",
+        "projectPath": "D:\\BMS Company\\MMF\\MFF.Data\\MFF.Data.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\BMS Company\\MMF\\MFF.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
-                "projectPath": "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj"
+              "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
+                "projectPath": "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj"
               }
             }
           }
@@ -76,21 +76,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
+    "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj",
+        "projectUniqueName": "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj",
         "projectName": "MFF.DTO",
-        "projectPath": "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MMF\\MFF.DTO\\obj\\",
+        "projectPath": "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\BMS Company\\MMF\\MFF.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -156,21 +156,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj": {
+    "D:\\BMS Company\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj",
+        "projectUniqueName": "D:\\BMS Company\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj",
         "projectName": "MFF.Infrastructure",
-        "projectPath": "D:\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MMF\\MFF.Infrastructure\\obj\\",
+        "projectPath": "D:\\BMS Company\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\BMS Company\\MMF\\MFF.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -184,11 +184,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\MMF\\MFF.Data\\MFF.Data.csproj": {
-                "projectPath": "D:\\MMF\\MFF.Data\\MFF.Data.csproj"
+              "D:\\BMS Company\\MMF\\MFF.Data\\MFF.Data.csproj": {
+                "projectPath": "D:\\BMS Company\\MMF\\MFF.Data\\MFF.Data.csproj"
               },
-              "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
-                "projectPath": "D:\\MMF\\MFF.DTO\\MFF.DTO.csproj"
+              "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj": {
+                "projectPath": "D:\\BMS Company\\MMF\\MFF.DTO\\MFF.DTO.csproj"
               }
             }
           }
@@ -247,21 +247,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\MMF\\MFF.WEB\\MFF.WEB.csproj": {
+    "D:\\BMS Company\\MMF\\MFF.WEB\\MFF.WEB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MMF\\MFF.WEB\\MFF.WEB.csproj",
+        "projectUniqueName": "D:\\BMS Company\\MMF\\MFF.WEB\\MFF.WEB.csproj",
         "projectName": "MFF.WEB",
-        "projectPath": "D:\\MMF\\MFF.WEB\\MFF.WEB.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\MMF\\MFF.WEB\\obj\\",
+        "projectPath": "D:\\BMS Company\\MMF\\MFF.WEB\\MFF.WEB.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\BMS Company\\MMF\\MFF.WEB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -275,8 +275,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj": {
-                "projectPath": "D:\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj"
+              "D:\\BMS Company\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj": {
+                "projectPath": "D:\\BMS Company\\MMF\\MFF.Infrastructure\\MFF.Infrastructure.csproj"
               }
             }
           }
@@ -339,7 +339,7 @@
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[3.1.5, )"
             },
             "Polly": {
               "target": "Package",
@@ -384,7 +384,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

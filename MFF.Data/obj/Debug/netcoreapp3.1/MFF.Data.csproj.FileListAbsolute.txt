@@ -22,3 +22,39 @@ D:\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csproj.CoreCompileInputs.cache
 D:\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csproj.CopyComplete
 D:\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.dll
 D:\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.pdb
+D:\Project BMS\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.deps.json
+D:\Project BMS\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.dll
+D:\Project BMS\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.pdb
+D:\Project BMS\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.DTO.dll
+D:\Project BMS\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.DTO.pdb
+D:\Project BMS\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csprojAssemblyReference.cache
+D:\Project BMS\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.AssemblyInfoInputs.cache
+D:\Project BMS\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.AssemblyInfo.cs
+D:\Project BMS\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csproj.CoreCompileInputs.cache
+D:\Project BMS\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csproj.CopyComplete
+D:\Project BMS\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.dll
+D:\Project BMS\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.pdb
+H:\C# Project\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.deps.json
+H:\C# Project\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.dll
+H:\C# Project\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.pdb
+H:\C# Project\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.DTO.dll
+H:\C# Project\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.DTO.pdb
+H:\C# Project\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csprojAssemblyReference.cache
+H:\C# Project\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.AssemblyInfoInputs.cache
+H:\C# Project\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.AssemblyInfo.cs
+H:\C# Project\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csproj.CoreCompileInputs.cache
+H:\C# Project\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csproj.CopyComplete
+H:\C# Project\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.dll
+H:\C# Project\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.pdb
+D:\BMS Company\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.deps.json
+D:\BMS Company\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.dll
+D:\BMS Company\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.Data.pdb
+D:\BMS Company\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.DTO.dll
+D:\BMS Company\MMF\MFF.Data\bin\Debug\netcoreapp3.1\MFF.DTO.pdb
+D:\BMS Company\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csprojAssemblyReference.cache
+D:\BMS Company\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.AssemblyInfoInputs.cache
+D:\BMS Company\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.AssemblyInfo.cs
+D:\BMS Company\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csproj.CoreCompileInputs.cache
+D:\BMS Company\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.csproj.CopyComplete
+D:\BMS Company\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.dll
+D:\BMS Company\MMF\MFF.Data\obj\Debug\netcoreapp3.1\MFF.Data.pdb

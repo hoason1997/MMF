@@ -1,0 +1,21 @@
+﻿ul {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+    li a {
+        display: block;
+        padding: 8px;
+        background-color: #dddddd;
+    }
+
+
+#HOANGDHNAV h1 table {
+    padding-top: 20px;
+}
