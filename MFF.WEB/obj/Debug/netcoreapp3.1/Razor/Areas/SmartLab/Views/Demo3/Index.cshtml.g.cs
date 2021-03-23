@@ -12,7 +12,15 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 2 "D:\BMS Company\MMF\MFF.WEB\Areas\SmartLab\Views\_ViewImports.cshtml"
+using MFF.Infrastructure.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"326c6537310089ac099e41df1fd9ab541e5d8a14", @"/Areas/SmartLab/Views/Demo3/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"baee1b558c19fc1bd8cc803f75ae446f0ad9ed29", @"/Areas/SmartLab/Views/_ViewImports.cshtml")]
     public class Areas_SmartLab_Views_Demo3_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

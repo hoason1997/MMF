@@ -12,12 +12,23 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 2 "D:\BMS Company\MMF\MFF.WEB\Areas\SmartLab\Views\_ViewImports.cshtml"
+using MFF.Infrastructure.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6bc7707065912b80c297f010f74c845fa64b9cf5", @"/Areas/SmartLab/Views/TDTTCacPhongBan/Index.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"baee1b558c19fc1bd8cc803f75ae446f0ad9ed29", @"/Areas/SmartLab/Views/_ViewImports.cshtml")]
     public class Areas_SmartLab_Views_TDTTCacPhongBan_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/assets/css/Intern.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_2 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/assets/js/Intern.js"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_3 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "1", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_4 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "2", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_5 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "3", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         #line hidden
         #pragma warning disable 0649
         private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
@@ -40,6 +51,9 @@ namespace AspNetCore
         }
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.HeadTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_HeadTagHelper;
         private global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -51,9 +65,9 @@ namespace AspNetCore
 #line default
 #line hidden
 #nullable disable
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf54053", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf55701", async() => {
                 WriteLiteral(@"    <link rel=""stylesheet"" href=""https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/css/tempusdominus-bootstrap-4.min.css"" crossorigin=""anonymous"" />    <script src=""https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/js/tempusdominus-bootstrap-4.min.js"" crossorigin=""anonymous""></script>    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6bc7707065912b80c297f010f74c845fa64b9cf54655", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "6bc7707065912b80c297f010f74c845fa64b9cf56303", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -68,7 +82,7 @@ namespace AspNetCore
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf55831", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf57479", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -104,18 +118,98 @@ namespace AspNetCore
             BeginWriteAttribute("href", " href=\"", 2111, "\"", 2118, 0);
             EndWriteAttribute();
             WriteLiteral(@" class=""text-muted"">Mía - Nước mía</a>                                </li>                            </ul>                            <!--end::Breadcrumb-->                        </div>                        <!--end::Page Heading-->                    </div>                    <!--end::Info-->                </div>            </div>            <div class=""card card-custom gutter-b example example-compact"">                <div class=""card-header"" id=""HOANGDHNAV"">                    <h1 style=""padding-top:20px;"">Trao đổi thông tin phòng ban</h1>                    <div style=""display:inline; padding-top:20px;"">                        <a href=""#"" style=""margin-right:10px;""><strong>≣ Excel 2003</strong></a>                        <a href=""#"" style=""margin-right:10px;""><strong>≣ Excel 2010</strong> </a>                        <a href=""#"" style=""margin-right:10px;""><strong>≣ Word</strong> </a>                        <a href=""#"" style=""margin-right:10px;""><strong>≣ PDF</strong></a>            ");
-            WriteLiteral(@"        </div>                </div>                <!--begin::Form-->                <form>                    <div class=""card-body"">                        <div class=""accordion accordion-toggle-arrow"" id=""accordionExample2"">                            <div id=""collapseOne2"" class=""collapse show"" data-parent=""#accordionExample2"">                                <div class=""container row"">                                    <label class=""col-3"">Tiêu đề</label>                                    <input type=""text"" class=""col-4 form-control"" style=""margin-left:12px;"" /><br /><br />                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Ngày kết thúc công việc</label>                                    <div class=""col-4 input-group date"" id=""datetimepicker4"" data-target-input=""nearest"">                                        <input id=""dateItem"" class=""form-control"" type=""text"" data-target=""#dat");
-            WriteLiteral(@"etimepicker4"" />                                        <div class=""input-group-append"" data-target=""#datetimepicker4"" data-toggle=""datetimepicker"">                                            <div class=""input-group-text""><i class=""fa fa-calendar""></i></div>                                        </div>                                    </div>                                    <script type=""text/javascript"">                                        $(function () {                                            $('#datetimepicker4').datetimepicker({                                                format: 'L'                                            });                                        });                                    </script>                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Giờ kết thúc công việc</label>                                    <div class=""col-4 input-group date"" id");
-            WriteLiteral(@"=""datetimepicker5"" data-target-input=""nearest"">                                        <input id=""dateItem"" class=""form-control"" type=""text"" data-target=""#datetimepicker5"" />                                        <div class=""input-group-append"" data-target=""#datetimepicker5"" data-toggle=""datetimepicker"">                                            <div class=""input-group-text""><i class=""fa fa-calendar""></i></div>                                        </div>                                    </div>                                    <script type=""text/javascript"">                                        $(function () {                                            $('#datetimepicker5').datetimepicker({                                                format: 'L'                                            });                                        });                                    </script>                                </div><br />                                <div class=""container row"">   ");
-            WriteLiteral(@"                                 <label class=""col-3"">Trạng thái</label>                                    <div class=""col-4"" style=""margin-left:12px;"">                                        <div class=""form-check"">                                            <input class=""form-check-input"" type=""checkbox""");
-            BeginWriteAttribute("value", " value=\"", 6526, "\"", 6534, 0);
-            EndWriteAttribute();
-            WriteLiteral(@" id=""flexCheckChecked"" checked>                                            <label class=""form-check-label"" for=""flexCheckChecked"">                                                Các phòng ban                                            </label>                                        </div><br />                                        <div class=""form-check"">                                            <input class=""form-check-input"" type=""checkbox""");
-            BeginWriteAttribute("value", " value=\"", 6991, "\"", 6999, 0);
-            EndWriteAttribute();
-            WriteLiteral(@" id=""flexCheckChecked2"" checked>                                            <label class=""form-check-label"" for=""flexCheckChecked2"">                                                Các phòng ban và email                                            </label>                                        </div>                                    </div>                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Thuộc phòng ban</label>                                    <select class=""form-select form-select-sm col-4"" aria-label="".form-select-sm example"" style=""margin-left:12px;"">                                        <option selected>Open this select menu</option>                                        <option value=""1"">One</option>                                        <option value=""2"">Two</option>                                        <option value=""3"">Three</option>                                    <");
-            WriteLiteral(@"/select>                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Nội dung</label>                                    <div class=""col-9"">                                        <textarea name=""editor1""></textarea>                                        <script>                                            CKEDITOR.replace('editor1');                                        </script>                                    </div>                                </div><br />                                <div style=""float:right; padding-bottom:10px;"">                                    <button type=""submit"" class=""btn btn-success"">                                        Lưu lại!                                    </button>                                    <button type=""reset"" class=""btn btn-danger"">                                        Thoát!                                    </button>        ");
-            WriteLiteral(@"                        </div>                            </div>                        </div>                        <!--begin: Code-->                        <div class=""example-code mt-10"">                            <div class=""example-highlight"">                            </div>                        </div>                        <!--end: Code-->                    </div>                </form>            </div>        </div>        <!--end::Container-->    </div>    <!--end::Entry--></div><!--end::Content-->");
+            WriteLiteral("        </div>\r                </div>\r                <!--begin::Form-->\r                ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf512559", async() => {
+                WriteLiteral(@"                    <div class=""card-body"">                        <div class=""accordion accordion-toggle-arrow"" id=""accordionExample2"">                            <div id=""collapseOne2"" class=""collapse show"" data-parent=""#accordionExample2"">                                <div class=""container row"">                                    <label class=""col-3"">Tiêu đề</label>                                    <input type=""text"" class=""col-4 form-control"" style=""margin-left:12px;"" /><br /><br />                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Ngày kết thúc công việc</label>                                    <div class=""col-4 input-group date"" id=""datetimepicker4"" data-target-input=""nearest"">                                        <input id=""dateItem"" class=""form-control"" type=""text"" data-target=""#datetimepicker4"" />                                        <div class=""input-group-append"" data-t");
+                WriteLiteral(@"arget=""#datetimepicker4"" data-toggle=""datetimepicker"">                                            <div class=""input-group-text""><i class=""fa fa-calendar""></i></div>                                        </div>                                    </div>                                    <script type=""text/javascript"">                                        $(function () {                                            $('#datetimepicker4').datetimepicker({                                                format: 'L'                                            });                                        });                                    </script>                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Giờ kết thúc công việc</label>                                    <div class=""col-4 input-group date"" id=""datetimepicker5"" data-target-input=""nearest"">                                        <input ");
+                WriteLiteral(@"id=""dateItem"" class=""form-control"" type=""text"" data-target=""#datetimepicker5"" />                                        <div class=""input-group-append"" data-target=""#datetimepicker5"" data-toggle=""datetimepicker"">                                            <div class=""input-group-text""><i class=""fa fa-calendar""></i></div>                                        </div>                                    </div>                                    <script type=""text/javascript"">                                        $(function () {                                            $('#datetimepicker5').datetimepicker({                                                format: 'L'                                            });                                        });                                    </script>                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Trạng thái</label>                      ");
+                WriteLiteral("              <div class=\"col-4\" style=\"margin-left:12px;\">\r                                        <div class=\"form-check\">\r                                            <input class=\"form-check-input\" type=\"checkbox\"");
+                BeginWriteAttribute("value", " value=\"", 6526, "\"", 6534, 0);
+                EndWriteAttribute();
+                WriteLiteral(@" id=""flexCheckChecked"" checked>                                            <label class=""form-check-label"" for=""flexCheckChecked"">                                                Các phòng ban                                            </label>                                        </div><br />                                        <div class=""form-check"">                                            <input class=""form-check-input"" type=""checkbox""");
+                BeginWriteAttribute("value", " value=\"", 6991, "\"", 6999, 0);
+                EndWriteAttribute();
+                WriteLiteral(@" id=""flexCheckChecked2"" checked>                                            <label class=""form-check-label"" for=""flexCheckChecked2"">                                                Các phòng ban và email                                            </label>                                        </div>                                    </div>                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Thuộc phòng ban</label>                                    <select class=""form-select form-select-sm col-4"" aria-label="".form-select-sm example"" style=""margin-left:12px;"">                                        ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf517826", async() => {
+                    WriteLiteral("Open this select menu");
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+                BeginWriteTagHelperAttribute();
+                __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
+                __tagHelperExecutionContext.AddHtmlAttribute("selected", Html.Raw(__tagHelperStringValueBuffer), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.Minimized);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral("\r                                        ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf519217", async() => {
+                    WriteLiteral("One");
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_3.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_3);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral("\r                                        ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf520476", async() => {
+                    WriteLiteral("Two");
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_4.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_4);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral("\r                                        ");
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6bc7707065912b80c297f010f74c845fa64b9cf521735", async() => {
+                    WriteLiteral("Three");
+                }
+                );
+                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper>();
+                __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper);
+                __Microsoft_AspNetCore_Mvc_TagHelpers_OptionTagHelper.Value = (string)__tagHelperAttribute_5.Value;
+                __tagHelperExecutionContext.AddTagHelperAttribute(__tagHelperAttribute_5);
+                await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+                if (!__tagHelperExecutionContext.Output.IsContentModified)
+                {
+                    await __tagHelperExecutionContext.SetOutputContentAsync();
+                }
+                Write(__tagHelperExecutionContext.Output);
+                __tagHelperExecutionContext = __tagHelperScopeManager.End();
+                WriteLiteral(@"                                    </select>                                </div><br />                                <div class=""container row"">                                    <label class=""col-3"">Nội dung</label>                                    <div class=""col-9"">                                        <textarea name=""editor1""></textarea>                                        <script>                                            CKEDITOR.replace('editor1');                                        </script>                                    </div>                                </div><br />                                <div style=""float:right; padding-bottom:10px;"">                                    <button type=""submit"" class=""btn btn-success"">                                        Lưu lại!                                    </button>                                    <button type=""reset"" class=""btn btn-danger"">                                        Thoát!                ");
+                WriteLiteral(@"                    </button>                                </div>                            </div>                        </div>                        <!--begin: Code-->                        <div class=""example-code mt-10"">                            <div class=""example-highlight"">                            </div>                        </div>                        <!--end: Code-->                    </div>                ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r            </div>\r        </div>\r        <!--end::Container-->\r    </div>\r    <!--end::Entry-->\r</div>\r<!--end::Content-->\r");
         }
         #pragma warning restore 1998
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]

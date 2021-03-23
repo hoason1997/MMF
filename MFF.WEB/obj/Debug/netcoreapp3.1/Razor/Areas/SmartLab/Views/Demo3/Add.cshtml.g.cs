@@ -12,9 +12,40 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 2 "D:\BMS Company\MMF\MFF.WEB\Areas\SmartLab\Views\_ViewImports.cshtml"
+using MFF.Infrastructure.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0f3fb8566bf29041b33fa4130af46cbc0f5501fd", @"/Areas/SmartLab/Views/Demo3/Add.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"baee1b558c19fc1bd8cc803f75ae446f0ad9ed29", @"/Areas/SmartLab/Views/_ViewImports.cshtml")]
     public class Areas_SmartLab_Views_Demo3_Add : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
+        private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("role", new global::Microsoft.AspNetCore.Html.HtmlString("form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
+        #line hidden
+        #pragma warning disable 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext __tagHelperExecutionContext;
+        #pragma warning restore 0649
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner __tagHelperRunner = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner();
+        #pragma warning disable 0169
+        private string __tagHelperStringValueBuffer;
+        #pragma warning restore 0169
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __backed__tagHelperScopeManager = null;
+        private global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager __tagHelperScopeManager
+        {
+            get
+            {
+                if (__backed__tagHelperScopeManager == null)
+                {
+                    __backed__tagHelperScopeManager = new global::Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperScopeManager(StartTagHelperWritingScope, EndTagHelperWritingScope);
+                }
+                return __backed__tagHelperScopeManager;
+            }
+        }
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
+        private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
@@ -40,12 +71,13 @@ namespace AspNetCore
                         </div>
                         <div class=""panel-body"">
 
-                            <form role=""form"">
+                            ");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0f3fb8566bf29041b33fa4130af46cbc0f5501fd4396", async() => {
+                WriteLiteral(@"
                                 <div class=""panel-group accordion"" id=""accordion"">
                                     <div class=""panel panel-white"">
                                         <div class=""panel-heading"">
-         ");
-            WriteLiteral(@"                                   <h5 class=""panel-title"">
+                                            <h5 class=""panel-title"">
                                                 <a class=""accordion-toggle collapsed"" data-toggle=""collapse"" data-parent=""#accordion"" href=""#collapseOne"">
                                                     <i class=""icon-arrow""></i>  Mía ( IP=Bx1*100/Bx2 )
                                                 </a>
@@ -54,10 +86,10 @@ namespace AspNetCore
                                         <div id=""collapseOne"" class=""panel-collapse collapse"">
                                             <div class=""panel-body"">
                                                 <div class=""form-group row"">
-                                                    <label for=""example-search-input"" class=""col-2 col-form-label"">Mía	Bx1</label>
+                                                    <label for=""example-s");
+                WriteLiteral(@"earch-input"" class=""col-2 col-form-label"">Mía	Bx1</label>
                                                     <div class=""col-3"">
-                                                        <input class=""form-control"" type=""search"" val");
-            WriteLiteral(@"ue=""Vui lòng nhập liệu"" id=""example-search-input"">
+                                                        <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
                                                     </div>
                                                 </div>
                                                 <div class=""form-group row"">
@@ -66,11 +98,11 @@ namespace AspNetCore
                                                         <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
                                                     </div>
                                                 </div>
-                                                <div class=""form-group row"">
+                                                <div class=""form-group row""");
+                WriteLiteral(@">
                                                     <label for=""example-search-input"" class=""col-2 col-form-label"">IP</label>
                                                     <div class=""col-3"">
-                              ");
-            WriteLiteral(@"                          <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
+                                                        <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
                                                     </div>
                                                 </div>
                                                 <div class=""form-group row"">
@@ -78,11 +110,11 @@ namespace AspNetCore
                                                     <div class=""col-3"">
                                                         <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
                                                     </div>
-                                                </div>
+                                                <");
+                WriteLiteral(@"/div>
 
                                                 <div class=""form-group row"">
-                                                    <label for=""example-search-input"" class=""col-2 col-form-label"">KL khay và túi có mẫu sau sấy</");
-            WriteLiteral(@"label>
+                                                    <label for=""example-search-input"" class=""col-2 col-form-label"">KL khay và túi có mẫu sau sấy</label>
                                                     <div class=""col-3"">
                                                         <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
                                                     </div>
@@ -90,12 +122,12 @@ namespace AspNetCore
                                                 <div class=""form-group row"">
                                                     <label for=""example-search-input"" class=""col-2 col-form-label"">KL sau nấu bã mía</label>
                                                     <div class=""col-3"">
-                                                        <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
+                                                        <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-inpu");
+                WriteLiteral(@"t"">
                                                     </div>
                                                 </div>
                                                 <div class=""form-group row"">
-                                  ");
-            WriteLiteral(@"                  <label for=""example-search-input"" class=""col-2 col-form-label"">
+                                                    <label for=""example-search-input"" class=""col-2 col-form-label"">
                                                         Bx TT
                                                     </label>
                                                     <div class=""col-3"">
@@ -105,10 +137,10 @@ namespace AspNetCore
                                             </div>
                                         </div>
                                         <div class=""panel panel-white"">
-                                            <div class=""panel-heading"">
+                                            <div class=""panel-headin");
+                WriteLiteral(@"g"">
                                                 <h5 class=""panel-title"">
-                                                    <a class=""accordion-toggle collapsed"" data-toggle=""collapse"" data-parent=""#accordion"" href=""#collapseT");
-            WriteLiteral(@"wo"">
+                                                    <a class=""accordion-toggle collapsed"" data-toggle=""collapse"" data-parent=""#accordion"" href=""#collapseTwo"">
                                                         <i class=""icon-arrow""></i> Nước mía  ( Ap=(Pol đọc* Facteur) * 1.1 * 100 / Bx đọc)
                                                     </a>
                                                 </h5>
@@ -117,13 +149,13 @@ namespace AspNetCore
                                                 <div class=""panel-body"">
                                                     <div class=""form-group"">
                                                         <input type=""text"" class=""form-control"" name=""grandfatherName"" placeholder=""Enter your grandfather's first name"">
-                                                    </div>
+                                                    </div");
+                WriteLiteral(@">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class=""panel panel-white"">
- ");
-            WriteLiteral(@"                                           <div class=""panel-heading"">
+                                            <div class=""panel-heading"">
                                                 <h5 class=""panel-title"">
                                                     <a class=""accordion-toggle collapsed"" data-toggle=""collapse"" data-parent=""#accordion"" href=""#collapseThree"">
                                                         <i class=""icon-arrow""></i> Nước mía  ( Ap=(Pol đọc* Facteur) * 1.1 * 100 / Bx đọc)
@@ -132,10 +164,10 @@ namespace AspNetCore
                                             </div>
                                             <div id=""collapseThree"" class=""panel-collapse collapse"">
                                                 <div class=""panel-body"">
-                                                    <div class=""form-group row"">
+  ");
+                WriteLiteral(@"                                                  <div class=""form-group row"">
                                                         <label for=""example-search-input"" class=""col-2 col-form-label"">Bx2</label>
-                     ");
-            WriteLiteral(@"                                   <div class=""col-3"">
+                                                        <div class=""col-3"">
                                                             <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
                                                         </div>
                                                     </div>
@@ -143,11 +175,11 @@ namespace AspNetCore
                                                         <label for=""example-search-input"" class=""col-2 col-form-label"">IP</label>
                                                         <div class=""col-3"">
                                                             <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
-                                                        </div>
+       ");
+                WriteLiteral(@"                                                 </div>
                                                     </div>
                                                     <div class=""form-group row"">
-                                  ");
-            WriteLiteral(@"                      <label for=""example-search-input"" class=""col-2 col-form-label"">KL khay và túi</label>
+                                                        <label for=""example-search-input"" class=""col-2 col-form-label"">KL khay và túi</label>
                                                         <div class=""col-3"">
                                                             <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
                                                         </div>
@@ -156,10 +188,10 @@ namespace AspNetCore
                                                     <div class=""form-group row"">
                                                         <label for=""example-search-input"" class=""col-2 col-form-label"">KL khay và túi có mẫu sau sấy</label>
                                                         <div class=""col-3"">
-                                                            <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
+     ");
+                WriteLiteral(@"                                                       <input class=""form-control"" type=""search"" value=""Vui lòng nhập liệu"" id=""example-search-input"">
                                                         </div>
-                 ");
-            WriteLiteral(@"                                   </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -168,15 +200,22 @@ namespace AspNetCore
                                 <a href=""/SmartLab/Demo3/Grid"" class=""btn btn-o btn-primary"">
                                     Lưu
                                 </a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- end: BASIC EXAMPLE -->");
+                            ");
+            }
+            );
+            __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper);
+            __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper>();
+            __tagHelperExecutionContext.Add(__Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper);
+            __tagHelperExecutionContext.AddHtmlAttribute(__tagHelperAttribute_0);
+            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
+            if (!__tagHelperExecutionContext.Output.IsContentModified)
+            {
+                await __tagHelperExecutionContext.SetOutputContentAsync();
+            }
+            Write(__tagHelperExecutionContext.Output);
+            __tagHelperExecutionContext = __tagHelperScopeManager.End();
+            WriteLiteral("\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<!-- end: BASIC EXAMPLE -->");
         }
         #pragma warning restore 1998
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
