@@ -18,6 +18,11 @@ namespace MFF.WEB.Controllers
             return View();
         }
 
+        public ActionResult TestGenerateTable()
+        {
+            return View();
+        }
+
         // GET: Demo2/Create
         public ActionResult Add()
         {
