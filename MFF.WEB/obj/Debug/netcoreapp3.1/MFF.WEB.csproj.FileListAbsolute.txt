@@ -1072,3 +1072,4 @@ D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NS
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDDBDuongThanhPhamBoSung\ViewListData.cshtml.g.cs
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDDBDuongThanhPhamDuongLong\ViewListData.cshtml.g.cs
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDDBCanDongBao\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLVatTuHoaChat\ViewListData.cshtml.g.cs
