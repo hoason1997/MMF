@@ -1063,3 +1063,12 @@ D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\Sh
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\SharedTableForm\BCKN\_BCKNPhanTichTraoDoiION.cshtml.g.cs
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\SharedTableForm\BCKN\_BCKNDuongNonCaoPham.cshtml.g.cs
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\SharedTableForm\BCKN\_BCKNDuongNonHaPham.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\Test\Index.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLBCPKetQuaPhanTichBCP\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDSXDuongThanhPhamQuaCan\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDSXDuongCucBuiQuaCan\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDSXDuongKhongPhuHop\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDDBDuongThanhPhamDongBao\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDDBDuongThanhPhamBoSung\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDDBDuongThanhPhamDuongLong\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLDDBCanDongBao\ViewListData.cshtml.g.cs
