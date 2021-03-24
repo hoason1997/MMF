@@ -13,5 +13,9 @@ namespace MFF.WEB.Controllers
         {
             return View();
         }
+        public IActionResult ViewListData()
+        {
+            return View();
+        }
     }
 }
