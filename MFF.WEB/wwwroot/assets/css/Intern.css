@@ -1,11 +1,12 @@
 ﻿table th, td {
     padding: 5px;
+    text-align:center;
 }
 
 input.classic {
     /* styling */
     background-color: white;
-    border: thin solid blue;
+    border: thin solid black;
     border-radius: 4px;
     display: inline-block;
     font: inherit;
@@ -24,12 +25,12 @@ input.classic {
 
     /* arrows */
 
-    input.classic {
-        background-image: linear-gradient(45deg, transparent 50%, blue 50%), linear-gradient(135deg, blue 50%, transparent 50%), linear-gradient(to right, skyblue, skyblue);
-        background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
-        background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
-        background-repeat: no-repeat;
-    }
+input.classic {
+    background-image: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 50%, transparent 50%), linear-gradient(to right, black, black);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+    background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+    background-repeat: no-repeat;
+}
 
         input.classic:hover {
             background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, gray, gray);
@@ -78,3 +79,6 @@ th {
     -webkit-appearance: none;
 }
 
+.form-control:focus{
+    border-color:black;
+}
