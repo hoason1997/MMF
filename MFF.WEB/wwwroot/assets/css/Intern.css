@@ -71,11 +71,10 @@ th textarea{
 th {
     text-align: center;
 }
-
-.groupItem {
-    -moz-column-count: 2; /* Firefox */
-    -webkit-column-count: 2; /* Safari and Chrome */
-    column-count: 2;
+.dropdown-container select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
 }
-
 

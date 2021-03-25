@@ -1089,3 +1089,15 @@ D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NS
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLPKNNSLPTNuocThai\Index.cshtml.g.cs
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLPKNNSLPTBCPDauCa\Index.cshtml.g.cs
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\NSLPKNNSLPTDuongThoNhapKho\Index.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhMuaVu\Index.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhMuaVu\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTDanhMucChucNang\Index.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhKy\Index.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhKy\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhCa\Index.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhCa\ViewListData.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTDanhMucChucNang\AddForm.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTDanhMucChucNang\AddChildForm.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhChucNang\AddForm.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhChucNang\Index.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhBaoCao\Index.cshtml.g.cs
