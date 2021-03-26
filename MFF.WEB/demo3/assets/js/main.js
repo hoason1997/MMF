@@ -130,7 +130,7 @@ var Main = function() {
 
 		if(!isMobile() && pScroll.length) {
 			pScroll.perfectScrollbar({
-				suppressScrollX: true
+				suppressScrollX: false
 			});
 			pScroll.on("mousemove", function() {
 				$(this).perfectScrollbar('update');
@@ -309,7 +309,7 @@ var Main = function() {
 		var panelScroll = $(".panel-scroll");
 		if(panelScroll.length && !isMobile()) {
 			panelScroll.perfectScrollbar({
-				suppressScrollX: true
+				suppressScrollX: false
 			});
 		}
 	};

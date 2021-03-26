@@ -69,9 +69,6 @@ th, td {
     text-align: center;
 }
 
-th{
-    font-weight:bold;
-}
 
 td {
     width:1vw;
@@ -86,3 +83,4 @@ td {
 .form-control:focus{
     border-color:black;
 }
+
