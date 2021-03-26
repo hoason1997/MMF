@@ -1,8 +1,4 @@
-﻿table th, td {
-    /*padding: 5px;*/
-/*    text-align:center;
-*/}
-
+﻿
 input.classic {
     /* styling */
     background-color: white;
@@ -69,8 +65,12 @@ th textarea{
     box-sizing: border-box;
 }
 
-th {
+th, td {
     text-align: center;
+}
+
+td {
+    width:1vw;
 }
 .dropdown-container select {
     /* for Firefox */

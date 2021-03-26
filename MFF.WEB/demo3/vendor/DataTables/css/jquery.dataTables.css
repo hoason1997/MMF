@@ -332,30 +332,30 @@ table.dataTable td {
   text-decoration: none !important;
   cursor: pointer;
   *cursor: hand;
-  color: #333333 !important;
-  border: 1px solid transparent;
+  color: #111111 !important;
+  border: 1px solid black;
 }
-.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
-  color: #333333 !important;
-  border: 1px solid #cacaca;
-  background-color: white;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, gainsboro));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, white 0%, gainsboro 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -moz-linear-gradient(top, white 0%, gainsboro 100%);
-  /* FF3.6+ */
-  background: -ms-linear-gradient(top, white 0%, gainsboro 100%);
-  /* IE10+ */
-  background: -o-linear-gradient(top, white 0%, gainsboro 100%);
-  /* Opera 11.10+ */
-  background: linear-gradient(to bottom, white 0%, gainsboro 100%);
-  /* W3C */
-}
+    .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+        color: #111111 !important;
+        border: 1px solid black;
+        background-color: white;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, gainsboro));
+        /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, white 0%, gainsboro 100%);
+        /* Chrome10+,Safari5.1+ */
+        background: -moz-linear-gradient(top, white 0%, gainsboro 100%);
+        /* FF3.6+ */
+        background: -ms-linear-gradient(top, white 0%, gainsboro 100%);
+        /* IE10+ */
+        background: -o-linear-gradient(top, white 0%, gainsboro 100%);
+        /* Opera 11.10+ */
+        background: linear-gradient(to bottom, white 0%, gainsboro 100%);
+        /* W3C */
+    }
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
   cursor: default;
-  color: #666 !important;
-  border: 1px solid transparent;
+  color: #111111 !important;
+  border: 1px solid black;
   background: transparent;
   box-shadow: none;
 }
@@ -423,7 +423,7 @@ table.dataTable td {
 .dataTables_wrapper .dataTables_info,
 .dataTables_wrapper .dataTables_processing,
 .dataTables_wrapper .dataTables_paginate {
-  color: #333333;
+  color: #111111;
 }
 .dataTables_wrapper .dataTables_scroll {
   clear: both;
