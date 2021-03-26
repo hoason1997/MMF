@@ -1,14 +1,43 @@
 ﻿
 @{
     Layout = "_Template2";
-} 
-@* Overflow for title, only exist horizontal scroll *@
-@*<div style="overflow:auto; overflow-y:hidden;">
+}
+<style>
+    .dddd1 {
+        width:500px;
+        height:500px;
+    }
+    table{
+        width:900px;
+        height:900px;
+    }
+</style>
+ Overflow for title, only support horizontal scroll 
+<div class="dddd1" style="overflow-x: auto; border:2px solid black;">
     <table>
-        <thead></thead>
-       
+        <thead>
+            <tr>
+                <th>Alo</th>
+                <th>Alo</th>
+                <th>Alo</th>
+                <th>Alo</th>
+                <th>Alo</th>
+            </tr>
+        </thead>
+
     </table>
-    <table>
-        <b
-    </table>
-</div>*@
+     Overflow for item, support vertical scroll 
+    <div style="overflow-y: auto;">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
