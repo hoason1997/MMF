@@ -3,6 +3,6 @@
 }
 
 function readSelectLayout(){
-    var a = document.getElementById("companyView").value;
-    alert(a);
+    //var a = document.getElementById("companyView").value;
+    alert('sSSS');
 }
