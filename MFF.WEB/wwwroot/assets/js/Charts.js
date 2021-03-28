@@ -5,7 +5,7 @@ google.charts.load('current', { 'packages': ['line','corechart'] });
 google.charts.setOnLoadCallback(drawChart);
 google.charts.setOnLoadCallback(drawVisualization);
 google.charts.setOnLoadCallback(drawLineChart);
-
+google.charts.setOnLoadCallback(drawIntervalChart);
 // Draw the simple pie chart and set the chart values
 function drawChart() {
     var data = google.visualization.arrayToDataTable([
@@ -18,7 +18,7 @@ function drawChart() {
     ]);
 
     // Optional; add a title and set the width and height of the chart
-    var options = { 'width': 500, 'height': 500 };
+    var options = { 'width': 600, 'height': 600 };
 
     // Display the chart inside the <div> element with id="piechart"
     var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -104,4 +104,39 @@ function drawLineChart() {
 
     drawMaterialChart();
 
+}
+
+// Draw the interval chart and set the chart values
+function drawIntervalChart() {
+
+    var data_no_interval = new google.visualization.DataTable();
+    data_no_interval.addColumn('string', 'name');
+    data_no_interval.addColumn('number', 'Đường thô');
+    data_no_interval.addColumn('number', 'Đường sản xuất');
+    data_no_interval.addColumn('number', 'Đường đóng bao');
+    data_no_interval.addRows([
+        ['08/2020', 0, 0, 0],
+        ['09/2020', 120, 95, 130],
+        ['10/2020', 130, 105, 140],
+        ['11/2020', 90, 85, 95],
+        ['12/2020', 70, 74, 63],
+        ['01/2021', 30, 39, 22],
+        ['02/2021', 80, 77, 83],
+        ['03/2021', 100, 90, 110]]);
+
+
+    var options_none = {
+        lineWidth: 2,
+        curveType: 'function',
+        legend: 'none',
+        intervals: { 'color': 'series-color' },
+        interval: {
+            'i0': { 'color': '#4374E0', 'style': 'bars', 'barWidth': 0, 'lineWidth': 4, 'pointSize': 10, 'fillOpacity': 1 },
+            'i1': { 'color': '#E49307', 'style': 'bars', 'barWidth': 0, 'lineWidth': 4, 'pointSize': 10, 'fillOpacity': 1 },
+            'i2': { 'style': 'area', 'curveType': 'function', 'fillOpacity': 0.3 }
+        }
+    };
+
+    var chart_none = new google.visualization.LineChart(document.getElementById('chart_interval'));
+    chart_none.draw(data_no_interval, options_none);
 }
