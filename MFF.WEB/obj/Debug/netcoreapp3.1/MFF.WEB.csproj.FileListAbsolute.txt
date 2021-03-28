@@ -1101,3 +1101,4 @@ D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QT
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhChucNang\AddForm.cshtml.g.cs
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhChucNang\Index.cshtml.g.cs
 D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\QTHTCauHinhBaoCao\Index.cshtml.g.cs
+D:\BMS Company\MMF\MFF.WEB\obj\Debug\netcoreapp3.1\Razor\Areas\SmartLab\Views\Test\TestChart.cshtml.g.cs

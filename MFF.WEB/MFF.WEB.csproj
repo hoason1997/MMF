@@ -70,6 +70,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Default\Controllers\" />
+    <Folder Include="wwwroot\assets\flotcharts\" />
   </ItemGroup>
 
 </Project>

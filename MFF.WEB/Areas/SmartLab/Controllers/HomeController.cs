@@ -8,6 +8,7 @@ namespace MFF.WEB.Controllers
     [Area("SmartLab")]
     public class HomeController : Controller
     {
+
         public readonly IInitData _initservice;
         public HomeController(IInitData initservice)
         {
