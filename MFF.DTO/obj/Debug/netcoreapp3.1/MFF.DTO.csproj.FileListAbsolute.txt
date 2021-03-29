@@ -32,3 +32,4 @@ D:\BMS Company\MMF\MFF.DTO\obj\Debug\netcoreapp3.1\MFF.DTO.AssemblyInfo.cs
 D:\BMS Company\MMF\MFF.DTO\obj\Debug\netcoreapp3.1\MFF.DTO.csproj.CoreCompileInputs.cache
 D:\BMS Company\MMF\MFF.DTO\obj\Debug\netcoreapp3.1\MFF.DTO.dll
 D:\BMS Company\MMF\MFF.DTO\obj\Debug\netcoreapp3.1\MFF.DTO.pdb
+D:\BMS Company\MMF\MFF.DTO\obj\Debug\netcoreapp3.1\MFF.DTO.csprojAssemblyReference.cache
