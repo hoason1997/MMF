@@ -65452,7 +65452,7 @@ code {
 
 .table.table-head-custom thead th, .table.table-head-custom thead tr {
     font-weight: 600;
-    color: #b5b5c3 !important;
+    color: green !important;
     font-size: .9rem;
     text-transform: uppercase;
     letter-spacing: .1rem

@@ -37,11 +37,11 @@
                                             <div class="col-sm-12 col-md-6"><div id="kt_datatable2_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="kt_datatable2"></label></div></div>
                                         </div><div class="row">
                                             <div class="col-sm-12">
-                                                <div class="dataTables_scroll">
-                                                    <div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;">
+                                                <div class="dataTables_scroll" style="position:relative; overflow:auto;">
+                                                    <div class="dataTables_scrollHead" style="overflow: visible;position:sticky; top:0; border: 0px; width: 100%; z-index:2;">
                                                         <div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 150%; display:block;">
                                                             <table class="table table-striped table-separate table-head-custom table-checkable dataTable no-footer" role="grid" style="margin-left: 0px; width: auto;">
-                                                                <thead>
+                                                                <thead style="background:white;">
                                                                     <tr role="row">
                                                                         <th class="sorting_asc" tabindex="0" aria-controls="kt_datatable2" rowspan="1" colspan="1" style="width: 1vw;" aria-label="STT: activate to sort column ascending">STT</th>
                                                                         <th class="sorting" tabindex="0" aria-controls="kt_datatable2" rowspan="1" colspan="1" style="width: 3vw;" aria-label="Tạo bởi: activate to sort column ascending">Tạo bởi</th>
@@ -57,7 +57,7 @@
                                                             </table>
                                                         </div>
                                                     </div>
-                                                    <div style="width:100%; overflow: auto;">
+                                                    <div style="width:100%; z-index:1;">
                                                         <div class="dataTables_scrollBody" style="position: relative;width: 150%;max-height: 50vh;">
                                                             <table class="table table-striped table-separate table-head-custom table-checkable dataTable no-footer" id="kt_datatable2" role="grid" aria-describedby="kt_datatable2_info" style="width: auto;">
                                                                 <thead>
