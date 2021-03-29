@@ -90,9 +90,3 @@ td {
 .form-control:focus{
     border-color:black;
 }
-
-.tableTitle{
-    position: -webkit-sticky;
-    position:sticky;
-    top:0;
-}
