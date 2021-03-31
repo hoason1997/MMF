@@ -9924,7 +9924,7 @@ td.small-width {
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) {
-  background-color: #efeff0;
+    background-color: #00ff00;
 }
 
 .editable-element {

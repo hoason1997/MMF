@@ -66854,21 +66854,21 @@ code {
 
     .checkbox.checkbox-outline.checkbox-success > span {
         background-color: transparent;
-        border-color: #d1d3e0
+        border-color: #99ff33
     }
 
     .checkbox.checkbox-outline.checkbox-success > input:focus ~ span {
         background-color: transparent;
-        border-color: #d1d3e0
+        border-color: #99ff33
     }
 
     .checkbox.checkbox-outline.checkbox-success > input:checked ~ span {
         background-color: transparent;
-        border-color: #1bc5bd
+        border-color: #0099ff
     }
 
         .checkbox.checkbox-outline.checkbox-success > input:checked ~ span:after {
-            border-color: #1bc5bd
+            border-color: #0099ff
         }
 
     .checkbox.checkbox-info > span {

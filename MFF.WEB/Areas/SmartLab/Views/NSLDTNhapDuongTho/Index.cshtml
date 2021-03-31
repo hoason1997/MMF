@@ -1,1 +1,121 @@
-﻿@{ Layout = "_Template2";}<head>    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/css/tempusdominus-bootstrap-4.min.css" crossorigin="anonymous" />    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/js/tempusdominus-bootstrap-4.min.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="~/assets/css/Intern.css" />    <script src="~/assets/js/Intern.js"></script>    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script></head><!--begin::Content--><div class="content d-flex flex-column flex-column-fluid" id="kt_content">    <!--begin::Entry-->    <div class="d-flex flex-column-fluid">        <!--begin::Container-->        <div class="container">            <div class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">                <h2 class="col-8 col-sm-12 col-lg-8" style="margin-left:2vw;">Nhập đường thô</h2>            </div>            <div class="card card-custom gutter-b example example-compact">                <!--begin::Form-->                <form>                    <div class="card-body">                        <div class="form-group row">                            <div class="col-6 col-lg-6 col-sm-12 ">                                <h6>Ngày</h6>                                <div>                                    <div class="input-group date" id="datetimepicker4" data-target-input="nearest">                                        <input id="dateItem" onchange="trackingValue()" type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />                                        <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">                                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>                                        </div>                                    </div>                                    <script type="text/javascript">                                        $(function () {                                            $('#datetimepicker4').datetimepicker({                                                format: 'L'                                            });                                        });                                    </script>                                </div>                            </div>                            <div class="col-6 col-lg-6 col-sm-12 ">                                <h6>Mã số ca</h6>                                <select class="form-control">                                </select>                            </div>                        </div>                        <div class="form-group row">                            <div class="col-6 col-lg-6 col-sm-12 ">                                <h6>Giờ</h6>                                <input type="text" class="form-control" />                            </div>                            <div class="col-6 col-lg-6 col-sm-12 ">                                <h6>Tấn đường thô</h6>                                <input type="text" class="form-control" />                            </div>                        </div>                        <div class="form-group row">                            <div class="col-12 col-lg-12 col-sm-12 ">                                <h6>Loại pol</h6>                                <select class="form-control">                                </select>                            </div>                        </div>                        <div class="form-group row">                            <div class="col-6 col-lg-6 col-sm-12 ">                                <h6>Tổng đường thô trong ca</h6>                                <input type="number" class="form-control" />                            </div>                            <div class="col-6 col-lg-6 col-sm-12 ">                                <h6>Tấn đường thô trong ngày</h6>                                <input type="number" class="form-control" />                            </div>                        </div>                        <div class="form-group row">                            <div class="col-12 col-lg-12 col-sm-12 ">                                <h6>Mô tả</h6>                                <textarea class="form-control"></textarea>                            </div>                        </div>                        <div class="form-group row">                            <div class="col-3 col-lg-3 col-sm-3 offset-lg-5 offset-sm-5 offset-5">                                <div>                                    <button type="button" class="btn btn-primary">Lưu</button>                                    <button type="button" class="btn btn-danger">Thoát</button>                                </div>                            </div>                        </div>                        <!--begin: Code-->                        <div class="example-code mt-10">                            <div class="example-highlight">                            </div>                        </div>                        <!--end: Code-->                    </div>                </form>            </div>        </div>        <!--end::Container-->    </div>    <!--end::Entry--></div><!--end::Content-->
+﻿@model MFF.WEB.Models.NSLDuongThoAddModel
+
+@{ Layout = "_Template2";
+}
+<head>
+
+    @*<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/css/tempusdominus-bootstrap-4.min.css" crossorigin="anonymous" />*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.38.0/js/tempusdominus-bootstrap-4.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/assets/css/Intern.css" />
+    <script src="~/assets/js/Intern.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+</head>
+
+
+<!--begin::Content-->
+<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
+
+    <!--begin::Entry-->
+    <div class="d-flex flex-column-fluid">
+        <!--begin::Container-->
+        <div class="container">
+            <div class="subheader py-2 py-lg-6 subheader-transparent" id="kt_subheader">
+                <h2 class="col-8 col-sm-12 col-lg-8" style="margin-left:2vw;">Nhập đường thô</h2>
+            </div>
+            <div class="card card-custom gutter-b example example-compact">
+                <!--begin::Form-->
+                <form method="post" asp-action="CreateDuongTho">
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <div class="col-6 col-lg-6 col-sm-12 ">
+                                <label class="h6" asp-for="Ngay"></label>
+                                <div class="input-group input-group-solid date" id="kt_datetimepicker_3" data-target-input="nearest">
+                                    <input type="text" asp-for="Ngay" class="form-control form-control-solid datetimepicker-input" data-target="#kt_datetimepicker_3">
+                                    <div class="input-group-append" data-target="#kt_datetimepicker_3" data-toggle="datetimepicker">
+                                        <span class="input-group-text">
+                                            <i class="ki ki-calendar"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <span asp-validation-for="Ngay"></span>
+                            </div>
+                            <div class="col-6 col-lg-6 col-sm-12 ">
+                                <label class="h6" asp-for="MaSoCa"></label>
+                                <select asp-for="MaSoCa" class="form-control">
+                                    <option value="Just a Test">Just a Test</option>
+                                </select>
+                                <span asp-validation-for="MaSoCa"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-6 col-lg-6 col-sm-12 ">
+                                <label class="h6" asp-for="Gio"></label>
+                                <input asp-for="Gio" class="form-control" />
+                                <span asp-validation-for="Gio"></span>
+                            </div>
+                            <div class="col-6 col-lg-6 col-sm-12 ">
+                                <label class="h6" asp-for="TanDuongTho"></label>
+                                <input type="number" asp-for="TanDuongTho" class="form-control" />
+                                <span asp-validation-for="TanDuongTho"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12 col-lg-12 col-sm-12 ">
+                                <label class="h6" asp-for="LoaiPol"></label>
+                                <select asp-for="LoaiPol" class="form-control">
+                                    <option value="Just a Test">Just a Test</option>
+                                </select>
+                                <span asp-validation-for="LoaiPol"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-6 col-lg-6 col-sm-12 ">
+                                <label class="h6" asp-for="TongDuongThoTrongCa"></label>
+                                <input type="number" asp-for="TongDuongThoTrongCa" class="form-control" />
+                                <span asp-validation-for="TongDuongThoTrongCa"></span>
+
+                            </div>
+                            <div class="col-6 col-lg-6 col-sm-12 ">
+                                <label class="h6" asp-for="TanDuongThoTrongNgay"></label>
+                                <input type="number" asp-for="TanDuongThoTrongNgay" class="form-control" />
+                                <span asp-validation-for="TanDuongThoTrongNgay"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-12 col-lg-12 col-sm-12 ">
+                                <label class="h6" asp-for="MoTa"></label>
+                                <textarea asp-for="MoTa" class="form-control"></textarea>
+                                <span asp-validation-for="MoTa"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-3 col-lg-3 col-sm-3 offset-lg-5 offset-sm-5 offset-5">
+                                <div>
+                                    <input type="submit" class="btn btn-primary" value="Lưu" />
+                                    <input type="reset" class="btn btn-danger" value="Thoát" />
+                                </div>
+                            </div>
+                        </div>
+                        <!--begin: Code-->
+
+                        <div class="example-code mt-10">
+                            <div class="example-highlight">
+                            </div>
+                        </div>
+                        <!--end: Code-->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Entry-->
+</div>
+<!--end::Content-->

@@ -126,9 +126,12 @@ namespace MFF.WEB
             loggerFactory.AddSerilog();
             app.UseEndpoints(endpoints =>
             {
+                //endpoints.MapControllerRoute(
+                //    name: "default",
+                //    pattern: "{area=SmartLab}/{controller=Test}/{action=testchart}");
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=SmartLab}/{controller=Test}/{action=testchart}");
+                    pattern: "{area=SmartLab}/{controller=NSLDTNhapDuongTho}/{action=index}");
 
                 //endpoints.MapControllerRoute(
                 //    name: "AVC",
