@@ -131,7 +131,7 @@ namespace MFF.WEB
                 //    pattern: "{area=SmartLab}/{controller=Test}/{action=testchart}");
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{area=SmartLab}/{controller=NSLDTNhapDuongTho}/{action=index}");
+                    pattern: "{area=SmartLab}/{controller=Test}/{action=testchart}");
 
                 //endpoints.MapControllerRoute(
                 //    name: "AVC",

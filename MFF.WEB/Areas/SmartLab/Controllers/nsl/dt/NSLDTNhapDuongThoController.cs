@@ -8,20 +8,25 @@ using System.Threading.Tasks;
 namespace MFF.WEB.Controllers
 {
     [Area("SmartLab")]
+    //[Route("nhap-so-lieu")]
     public class NSLDTNhapDuongThoController : Controller
     {
+        //[Route(Constants.AddData)]
         public IActionResult Index()
         {
             return View();
         }
+
+        //[Route(Constants.ViewData)]
         public IActionResult ViewListData()
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult CreateDuongTho(NSLDuongThoAddModel duongtho)
+        public IActionResult CreateDuongTho(DuongThoUpsertModel duongtho)
         {
+            //Dữ liệu nhập vào tuân thủ quy tắc thì cho xử lý
             if (ModelState.IsValid)
             {
                 duongtho.MoTa = "Create item perfect";
@@ -31,10 +36,10 @@ namespace MFF.WEB.Controllers
 
         public IActionResult ViewModelData()
         {
-            List<NSLDuongThoAddModel> a = new List<NSLDuongThoAddModel>();
+            List<DuongThoUpsertModel> a = new List<DuongThoUpsertModel>();
             for (int i = 0; i < 5; i++)
             {
-                var b = new NSLDuongThoAddModel();
+                var b = new DuongThoUpsertModel();
                 b.Id = i;
                 b.Ngay = DateTime.Now;
                 b.MaSoCa = "ABC";

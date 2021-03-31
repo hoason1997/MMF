@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MFF.WEB.Models
 {
-    public class NSLDuongThoAddModel
+    public class DuongThoUpsertModel
     {
         //Nhap so lieu -> duong tho
         [Key]
@@ -34,18 +34,15 @@ namespace MFF.WEB.Models
         [DisplayName("Loại Pol")]
         public string? LoaiPol { get; set; }
 
-        [Required(ErrorMessage = "Tổng đường thô không được bỏ trống")]
         [Range(0, double.MaxValue, ErrorMessage = "Cân nặng không hợp lệ")]
         [DisplayName("Tổng đường thô trong ca")]
-        public double? TongDuongThoTrongCa { get; set; }
+        public double TongDuongThoTrongCa { get; set; }
 
-        [Required(ErrorMessage = "Tấn đường thô trong ca không được bỏ trống")]
         [Range(0, double.MaxValue, ErrorMessage = "Cân nặng không hợp lệ")]
         [DisplayName("Tấn đường thô trong ca")]
-        public double? TanDuongThoTrongNgay { get; set; }
+        public double TanDuongThoTrongNgay { get; set; }
 
-        [Required(ErrorMessage = "Mô tả không được bỏ trống")]
         [DisplayName("Mô tả")]
-        public string? MoTa { get; set; }
+        public string MoTa { get; set; }
     }
 }

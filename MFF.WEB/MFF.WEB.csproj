@@ -11,28 +11,24 @@
     <Compile Remove="Areas\Default\Views\**" />
     <Compile Remove="Areas\SmartLab\Data\**" />
     <Compile Remove="Areas\SmartLab\Models\**" />
-    <Compile Remove="Constants\**" />
     <Compile Remove="Views\Home\**" />
     <Content Remove="Areas\Default\Data\**" />
     <Content Remove="Areas\Default\Models\**" />
     <Content Remove="Areas\Default\Views\**" />
     <Content Remove="Areas\SmartLab\Data\**" />
     <Content Remove="Areas\SmartLab\Models\**" />
-    <Content Remove="Constants\**" />
     <Content Remove="Views\Home\**" />
     <EmbeddedResource Remove="Areas\Default\Data\**" />
     <EmbeddedResource Remove="Areas\Default\Models\**" />
     <EmbeddedResource Remove="Areas\Default\Views\**" />
     <EmbeddedResource Remove="Areas\SmartLab\Data\**" />
     <EmbeddedResource Remove="Areas\SmartLab\Models\**" />
-    <EmbeddedResource Remove="Constants\**" />
     <EmbeddedResource Remove="Views\Home\**" />
     <None Remove="Areas\Default\Data\**" />
     <None Remove="Areas\Default\Models\**" />
     <None Remove="Areas\Default\Views\**" />
     <None Remove="Areas\SmartLab\Data\**" />
     <None Remove="Areas\SmartLab\Models\**" />
-    <None Remove="Constants\**" />
     <None Remove="Views\Home\**" />
   </ItemGroup>
 
@@ -66,6 +62,8 @@
 
   <ItemGroup>
     <Folder Include="Areas\Default\Controllers\" />
+    <Folder Include="Models\InputModels\NhapSoLieu\BanChePham\DanhMuc\" />
+    <Folder Include="Models\ViewModels\" />
     <Folder Include="wwwroot\assets\flotcharts\" />
   </ItemGroup>
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MFF.WEB.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,10 @@ using System.Threading.Tasks;
 namespace MFF.WEB.Controllers
 {
     [Area("SmartLab")]
+    [Route(Constants.BCKNKetQuaPhanTichHangNgay)]
     public class BCKNKetQuaPhanTichHangNgayController : Controller
     {
+        [Route(Constants.ViewData)]
         // GET: BCKN_KetQuaPhanTichHangNgayController
         public ActionResult Index()
         {

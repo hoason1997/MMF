@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace MFF.WEB.Models
 {
-    public class MaSoCaModel
+    public class GiNhanSuCoUpsertModel
     {
         [Key]
         public int Id { get; set; }
@@ -28,45 +28,37 @@ namespace MFF.WEB.Models
         [DisplayName("Thiết bị")]
         public string? ThietBi { get; set; }
 
-        [Required(ErrorMessage = "Mã thiết bị không được phép bỏ trống")]
         [DisplayName("Mã thiết bị")]
-        public string? MaThietBi { get; set; }
+        public string MaThietBi { get; set; }
 
         [Required(ErrorMessage = "Khu vực không được phép bỏ trống")]
         [DisplayName("Khu vực")]
         public string? KhuVuc { get; set; }
 
-        [Required(ErrorMessage = "Người xử lý không được phép bỏ trống")]
         [DisplayName("Người xử lý")]
-        public string? NguoiXuLy { get; set; }
+        public string NguoiXuLy { get; set; }
 
-        [Required(ErrorMessage = "Số phút sự cố không được phép bỏ trống")]
         [DisplayName("Số phút sự cố")]
         [Range(1,60, ErrorMessage = "Số phút không hợp lệ")]
-        public int? SoPhutSuCo { get; set; }
+        public int SoPhutSuCo { get; set; }
 
-        [Required(ErrorMessage = "Số phút ngưng ép/hòa tan không được phép bỏ trống")]
         [DisplayName("Số phút ngưng ép/hòa tan")]
         [Range(1, 60, ErrorMessage = "Số phút không hợp lệ")]
-        public int? SoPhutNgungEpHoaTan { get; set; }
+        public int SoPhutNgungEpHoaTan { get; set; }
 
-        [Required(ErrorMessage = "Nguyên nhân không được phép bỏ trống")]
         [DisplayName("Nguyên nhân")]
-        public string? NguyenNhan { get; set; }
+        public string NguyenNhan { get; set; }
 
-        [Required(ErrorMessage = "Khắc phục không được phép bỏ trống")]
         [DisplayName("Khắc Phục")]
-        public string? KhacPhuc { get; set; }
+        public string KhacPhuc { get; set; }
 
-        [Required(ErrorMessage = "Phòng ngừa không được phép bỏ trống")]
         [DisplayName("Phòng ngừa")]
-        public string? PhongNgua { get; set; }
+        public string PhongNgua { get; set; }
 
-        [Required(ErrorMessage = "Điều chỉnh không được phép bỏ trống")]
         [DisplayName("Điều chỉnh")]
-        public string? DieuChinh { get; set; }
+        public string DieuChinh { get; set; }
 
         [DisplayName("Loại sự cố")]
-        public string? LoaiSuCo { get; set; }
+        public string LoaiSuCo { get; set; }
     }
 }

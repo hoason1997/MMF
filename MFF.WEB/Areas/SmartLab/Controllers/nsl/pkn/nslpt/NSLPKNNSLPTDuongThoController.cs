@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MFF.WEB.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,10 @@ using System.Threading.Tasks;
 namespace MFF.WEB.Controllers
 {
     [Area("SmartLab")]
+    [Route(Constants.NSLPKNNSLPTDuongTho)]
     public class NSLPKNNSLPTDuongThoController : Controller
     {
+        [Route(Constants.AddData)]
         public IActionResult Index()
         {
             return View();
