@@ -63,7 +63,6 @@
   <ItemGroup>
     <Folder Include="Areas\Default\Controllers\" />
     <Folder Include="Models\InputModels\NhapSoLieu\BanChePham\DanhMuc\" />
-    <Folder Include="Models\ViewModels\" />
     <Folder Include="wwwroot\assets\flotcharts\" />
   </ItemGroup>
 

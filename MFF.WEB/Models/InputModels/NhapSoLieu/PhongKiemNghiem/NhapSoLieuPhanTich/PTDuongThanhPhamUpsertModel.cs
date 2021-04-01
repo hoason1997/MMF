@@ -44,7 +44,7 @@ namespace MFF.WEB.Models
         public string? LenhSanXuat { get; set; }
 
         [DisplayName("Danh mục")]
-        public List<string> DanhMuc { get; set; }
+        public List<DanhMucItemModel> DanhMuc { get; set; }
 
         [DisplayName("Giờ")]
         public List<string> GioCheckBox { get; set; }

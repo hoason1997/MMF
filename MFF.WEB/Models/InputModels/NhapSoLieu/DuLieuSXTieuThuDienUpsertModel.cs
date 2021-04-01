@@ -21,6 +21,6 @@ namespace MFF.WEB.Models
         public string? MaSoCa { get; set; }
 
         [DisplayName("Danh mục")]
-        public List<string> DanhMuc { get; set; }
+        public List<DanhMucItemModel> DanhMuc { get; set; }
     }
 }

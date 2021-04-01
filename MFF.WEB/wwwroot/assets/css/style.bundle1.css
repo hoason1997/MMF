@@ -82179,7 +82179,7 @@ code {
             transition: color .15s ease,background-color .15s ease,border-color .15s ease,box-shadow .15s ease;
             transition: color .15s ease,background-color .15s ease,border-color .15s ease,box-shadow .15s ease,-webkit-box-shadow .15s ease;
             outline: 0 !important;
-            padding: 1rem 1rem
+            padding: 0.3rem 0.3rem
         }
 
             .dataTables_wrapper .dataTable td .checkbox, .dataTables_wrapper .dataTable th .checkbox {
@@ -88739,7 +88739,7 @@ body {
 }
 
 .aside {
-    width: 265px
+    width: 365px
 }
 
     .aside .aside-menu.ps > .ps__rail-y {
@@ -88786,7 +88786,7 @@ body {
             }
 
     .aside-fixed.aside-minimize.aside-minimize-hover .aside {
-        width: 265px
+        width: 300px
     }
 
     .aside-fixed.aside-minimize.aside-minimize-hover .wrapper {

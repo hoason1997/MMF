@@ -10,8 +10,8 @@
     <script src="~/assets/js/Intern.js"></script>
     <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
     <style>
-        span{
-            color:red;
+        span {
+            color: red;
         }
     </style>
 </head>
@@ -47,8 +47,10 @@
                             </div>
                             <div class="col-6 col-lg-6 col-sm-12 ">
                                 <label class="h6" asp-for="MaSoCa"></label>
-                                <select asp-for="MaSoCa" class="form-control">
-                                    <option value="Just a Test">Just a Test</option>
+                                <select asp-for="MaSoCa" class="form-control selectpicker">
+                                    <option value="Just a Test">Duong tho A</option>
+                                    <option value="Just a Test">Duong tho B</option>
+                                    <option value="Just a Test">Duong tho C</option>
                                 </select>
                                 <span asp-validation-for="MaSoCa"></span>
                             </div>
@@ -69,8 +71,10 @@
                         <div class="form-group row">
                             <div class="col-12 col-lg-12 col-sm-12 ">
                                 <label class="h6" asp-for="LoaiPol"></label>
-                                <select asp-for="LoaiPol" class="form-control">
-                                    <option value="Just a Test">Just a Test</option>
+                                <select asp-for="LoaiPol" class="form-control selectpicker">
+                                    <option value="Just a Test">Duong tho A</option>
+                                    <option value="Just a Test">Duong tho B</option>
+                                    <option value="Just a Test">Duong tho C</option>
                                 </select>
                                 <span asp-validation-for="LoaiPol"></span>
                             </div>

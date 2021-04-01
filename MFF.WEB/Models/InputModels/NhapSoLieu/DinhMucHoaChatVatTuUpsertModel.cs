@@ -16,6 +16,6 @@ namespace MFF.WEB.Models
         [DisplayName("Chọn mùa vụ thực hiện một tiêu")]
         public string MuaVu { get; set; }
 
-        public List<string> DanhMuc { get; set; }
+        public List<DanhMucItemModel> DanhMuc { get; set; }
     }
 }

@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 namespace MFF.WEB.Controllers
 {
     [Area("SmartLab")]
-    //[Route("nhap-so-lieu")]
+    [Route(Constants.NSLDuongTho)]
     public class NSLDTNhapDuongThoController : Controller
     {
-        //[Route(Constants.AddData)]
+        [Route(Constants.AddData)]
         public IActionResult Index()
         {
             return View();
         }
 
-        //[Route(Constants.ViewData)]
+        [Route(Constants.ViewData)]
         public IActionResult ViewListData()
         {
             return View();

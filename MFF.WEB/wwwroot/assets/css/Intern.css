@@ -93,13 +93,13 @@ td {
 
 .selectW {
     position: sticky;
-    left: 10px;
+    left: 0px;
     background-color: white;
     z-index: 3;
 }
 .editW {
     position: sticky;
-    left: 160px;
+    left: 2.8vw;
     background-color: white;
     z-index: 3;
 }
@@ -107,14 +107,14 @@ td {
 
 .selectG {
     position: sticky;
-    left: 10px;
+    left: 0px;
     background-color: inherit;
     z-index: 3;
 }
 
 .editG {
     position: sticky;
-    left: 160px;
+    left: 2.8vw;
     background-color: inherit;
     z-index: 3;
 }
